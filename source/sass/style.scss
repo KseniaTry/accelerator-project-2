@@ -1,4 +1,26 @@
-// Vendor
-// ---------------------------------
-
+// vendor
 @import "vendor/normalize";
+@import "vendor/swiper-bundle.css";
+
+// common
+@import "common/fonts";
+@import "common/variables";
+@import "common/visually-hidden";
+@import "common/global";
+
+// blocks
+@import "blocks/about.scss";
+@import "blocks/advantages.scss";
+@import "blocks/button.scss";
+@import "blocks/consultation.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/gallery.scss";
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/navigation.scss";
+@import "blocks/page-body.scss";
+@import "blocks/reviews.scss";
+@import "blocks/social-list.scss";
+@import "blocks/tours.scss";
+@import "blocks/training.scss";
