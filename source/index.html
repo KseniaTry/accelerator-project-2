@@ -10,36 +10,38 @@
 
 <body class="page-body">
   <header class="header" data-test="header">
-    <a class="header__logo-link" href="index.html">
-      <img class="header__logo-icon" src="img/logo/logo.svg" width="142" height="42"
-        alt="Логотип LIFETOUR">
-    </a>
+    <div class="header__main-container">
+      <nav class="header__navigation navigation" aria-label="header-navigation">
+        <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#tours">Туры</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#training">Обучение</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
-    <nav class="header__navigation navigation" aria-label="header-navigation">
-      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Туры</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Обучение</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">О нас</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Отзывы</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Фотографии</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-
-    <a class="header__phone-link" href="tel:+78000000000">8 800 000-00-00</a>
+      <div class="header__links-container">
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo-icon" src="img/logo/logo.svg" width="142" height="42" alt="Логотип LIFETOUR">
+        </a>
+        <a class="header__phone-link" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -132,7 +134,7 @@
       </div>
     </section>
 
-    <section class="tours" data-test="tours">
+    <section class="tours" id="tours" data-test="tours">
       <h2 class="tours__title">Ближайшие туры</h2>
       <div class="tours__swiper swiper">
         <div class="tours__swiper-wrapper swiper-wrapper">
@@ -295,7 +297,7 @@
       <button class="tours__show-all" type="button">Показать все туры</button>
     </section>
 
-    <section class="training" data-test="training">
+    <section class="training" id="training" data-test="training">
       <h2 class="training__title">Обучение</h2>
       <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
         Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
@@ -435,7 +437,7 @@
       </ol>
     </section>
 
-    <section class="about" data-test="about">
+    <section class="about" id="about" data-test="about">
       <h2>О нас</h2>
       <picture>
         <source media="(min-width: 1440px)" width="660" height="498" type="image/webp"
@@ -464,7 +466,7 @@
         наслаждаться незабываемым приключением в приятной компании.</p>
     </section>
 
-    <section class="reviews" data-test="reviews">
+    <section class="reviews" id="reviews" data-test="reviews">
       <h3 class="reviews__title">Отзывы</h3>
       <div class="reviews__swiper swiper">
         <div class="reviews__swiper-wrapper swiper-wrapper">
@@ -612,7 +614,7 @@
       </ul>
     </section>
 
-    <section class="gallery" data-test="gallery">
+    <section class="gallery" id="gallery" data-test="gallery">
       <h2 class="gallery__title">Фотогалерея</h2>
       <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
         нашего сайта.</p>
@@ -757,7 +759,7 @@
         </form>
       </div>
 
-      <section class="consultation-contacts contacts">
+      <section class="consultation-contacts contacts" id="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
           увлекательными историями и подобрать для вас тур.</p>
@@ -804,22 +806,22 @@
     <nav class="footer__navigation navigation" aria-label="footer-navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Туры</a>
+          <a class="navigation__link" href="#tours">Туры</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Обучение</a>
+          <a class="navigation__link" href="#training">Обучение</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">О нас</a>
+          <a class="navigation__link" href="#about">О нас</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Отзывы</a>
+          <a class="navigation__link" href="#reviews">Отзывы</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Фотографии</a>
+          <a class="navigation__link" href="#gallery">Фотографии</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Контакты</a>
+          <a class="navigation__link" href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,27 @@
+.navigation {}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.navigation__item {}
+
+.navigation__link {
+  text-decoration: none;
+  color: $basic-light-color;
+  font-size: 16px;
+  font-size: 16px;
+}

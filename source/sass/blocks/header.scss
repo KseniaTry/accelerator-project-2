@@ -1,0 +1,136 @@
+.header {
+  background-color: $extra-color;
+
+  @media (max-width: $mobile-width-max) {
+    padding: 15px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    padding: 20px 45px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 40px 120px;
+  }
+}
+
+.header__main-container {
+  margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-content-width;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: $desktop-content-width;
+  }
+}
+
+.header__navigation {
+  @media (min-width: $desktop-width-min) {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.header__toggle {
+  position: absolute;
+  width: 17px;
+  height: 2px;
+  top: 12px;
+  left: 0;
+  background-color: $basic-light-color;
+  border: none;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    left: 0;
+    top: 6px;
+    z-index: 2;
+    background-color: $basic-light-color;
+  }
+
+  &::after {
+    top: 8px;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    top: 20px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    display: none;
+  }
+}
+
+.header__links-container {
+  @media (max-width: $mobile-width-max) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 11px;
+    width: 150px;
+    margin-left: auto;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 410px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $desktop-content-width;
+  }
+}
+
+.header__logo-link {
+  @media (min-width: $desktop-width-min) {
+  margin-left: 32px;
+  }
+}
+
+.header__logo-icon {}
+
+.header__phone-link {
+  text-decoration: none;
+  font-family: $main-font;
+  font-weight: 600;
+  color: $basic-light-color;
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

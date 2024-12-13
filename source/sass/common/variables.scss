@@ -1,6 +1,8 @@
 // глобальные переменные
 // цвета
-
+$basic-dark-color: #2d383f;
+$basic-light-color: #ffffff;
+$extra-color: #0266c1;
 
 // ширина экранов
 $mobile-width-max: 767px;
@@ -9,12 +11,10 @@ $tablet-width-max: 1439px;
 $desktop-width-min: 1440px;
 
 // ширина контента
-// $mobile-content-width: 290px;
-// $tablet-content-width: 678px;
-// $desktop-content-width: 1160px;
+$mobile-content-width: 290px;
+$tablet-content-width: 678px;
+$desktop-content-width: 1200px;
 
-// шрифты
-// $main-font: "Roboto Condensed", "Arial", sans-serif;
-// $secondary-font: "Alumni Sans", "Arial", sans-serif;
-
+// шрифт
+$main-font: "Montserrat", "Arial", sans-serif;
 
