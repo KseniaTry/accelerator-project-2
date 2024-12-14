@@ -1,5 +1,6 @@
 .header {
   background-color: $extra-color;
+  position: relative; // для кнопки меню и самого выпадающего меню
 
   @media (max-width: $mobile-width-max) {
     padding: 15px;
@@ -10,13 +11,12 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    padding: 40px 120px;
+    padding: 41px 120px 39px;
   }
 }
 
 .header__main-container {
   margin: 0 auto;
-  position: relative;
 
   @media (max-width: $mobile-width-max) {
     width: $mobile-content-width;
@@ -35,8 +35,8 @@
   @media (min-width: $desktop-width-min) {
     position: absolute;
     top: 50%;
-    left: 52%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%) translateX(25px);
   }
 }
 
@@ -44,8 +44,6 @@
   position: absolute;
   width: 17px;
   height: 2px;
-  top: 12px;
-  left: 0;
   background-color: $basic-light-color;
   border: none;
 
@@ -69,12 +67,52 @@
     top: -8px;
   }
 
+  @media (max-width: $mobile-width-max) {
+    top: 27px;
+    left: 15px;
+  }
+
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: 20px;
+    top: 40px;
+    left: 45px;
   }
 
   @media (min-width: $desktop-width-min) {
     display: none;
+  }
+}
+
+.header__navigation-list {
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.header__navigation--opened .header__toggle {
+  transform: rotate(-45deg);
+  width: 26px;
+}
+
+.header__navigation--opened .header__toggle::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.header__navigation--opened .header__toggle::before {
+  display: none;
+}
+
+.header__navigation--opened .header__navigation-list {
+  display: flex;
+  position: absolute;
+  left: 0;
+
+  @media (max-width: $mobile-width-max) {
+    top: 100px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    top: 82px;
   }
 }
 
@@ -107,7 +145,7 @@
 
 .header__logo-link {
   @media (min-width: $desktop-width-min) {
-  margin-left: 32px;
+    margin-left: 32px;
   }
 }
 
