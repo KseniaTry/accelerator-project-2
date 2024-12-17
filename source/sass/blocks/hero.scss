@@ -133,7 +133,10 @@
     left: 168px;
   }
 
-  @media (min-width: $desktop-width-min) {}
+  @media (min-width: $desktop-width-min) {
+    top: 187px;
+    right: 120px;
+  }
 }
 
 .hero__watch-tour {
