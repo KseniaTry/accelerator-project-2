@@ -25,7 +25,7 @@ const heroSlider = document.querySelector('.hero__swiper');
 new Swiper(heroSlider, {
   slideClass: 'hero__slide',
   modules: [Navigation, Pagination],
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   loop: true,
   centeredSlides: true,
   pagination: {

@@ -33,8 +33,8 @@
 
   @media (max-width: $mobile-width-max) {
     width: $mobile-content-width;
-    height: 472px;
-    margin: 40px 15px 56px;
+    height: 424px;
+    margin: 64px 15px 23px;
     justify-content: center;
   }
 
@@ -216,8 +216,8 @@
   border-radius: 100%;
 
   @media (max-width: $mobile-width-max) {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
 
   @media (min-width: $tablet-width-min) {
