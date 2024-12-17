@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  padding: 20px;
+
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button--primary {
+  color: $basic-light-color;
+  background-color: $extra-color;
+}
