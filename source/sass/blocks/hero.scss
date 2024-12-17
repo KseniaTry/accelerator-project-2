@@ -5,7 +5,7 @@
 
 .hero__slide {
   position: relative; // для кнопок переключения слайдов
-  background-image: linear-gradient(to right, rgba(15, 20, 41, 0.3) 33%, rgba(15, 20, 41, 0) 0%);
+  // background-image: linear-gradient(to right, rgba(15, 20, 41, 0.3) 33%, rgba(15, 20, 41, 0) 0%);
 
   @media (max-width: $mobile-width-max) {
     width: 320px;
@@ -187,7 +187,6 @@
 
 .hero__tour-details--difficulty::before {
   mask-image: url("/__spritemap#sprite-level-view");
-  ;
 }
 
 // swiper настройки буллетов и пагинации

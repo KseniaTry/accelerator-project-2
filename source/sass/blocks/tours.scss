@@ -1,0 +1,114 @@
+.tours {
+  @media (max-width: $mobile-width-max) {
+    padding: 36px 15px 20px;
+  }
+}
+
+.tours__title {
+  @media (max-width: $mobile-width-max) {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 800;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+
+  @media (min-width: $desktop-width-min) {}
+}
+
+.tours__swiper {}
+
+.tours__swiper-wrapper {}
+
+.tours__slide {
+  position: relative;
+}
+
+.tours__text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 416px;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto max-content max-content max-content;
+  z-index: 3;
+
+  color: $basic-light-color;
+}
+
+.tours__details {
+  position: relative;
+  margin: 0;
+  font-size: 12px;
+  font-size: 12px;
+  padding: 8px 0;
+  display: inline;
+  margin-bottom: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+  }
+}
+
+.tours__details--location {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  margin-right: 34px;
+  padding: 8px 12px 8px 34px;
+  background-color: $extra-color;
+
+  &::before {
+    width: 9px;
+    height: 12px;
+    left: 16px;
+    top: 10px;
+    background-image: url("/__spritemap#sprite-location-view");
+  }
+}
+
+.tours__details--days {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    left: -26px;
+    top: 7px;
+    background-image: url("/__spritemap#sprite-sun-view");
+  }
+}
+
+.tours__details--nights {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+
+  &::before {
+    width: 16px;
+    height: 16px;
+    left: -26px;
+    top: 7px;
+    background-image: url("/__spritemap#sprite-moon-view");
+  }
+}
+
+.tours__card-title {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  margin: 0;
+  margin-bottom: 31px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.tours__parameters {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+}
