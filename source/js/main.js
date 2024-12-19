@@ -27,6 +27,7 @@ new Swiper(heroSlider, {
   modules: [Navigation, Pagination],
   slidesPerView: 'auto',
   loop: true,
+  allowTouchMove: true,
   centeredSlides: true,
   pagination: {
     el: '.hero__button',
@@ -40,6 +41,35 @@ new Swiper(heroSlider, {
       pagination: {
         clickable: true,
       }
+    },
+  }
+});
+
+// tours swiper slider
+const toursSlider = document.querySelector('.tours__swiper');
+
+new Swiper(toursSlider, {
+  slideClass: 'tours__slide',
+  modules: [Navigation, Pagination],
+  loop: false,
+  centeredSlides: true,
+  navigation: {
+    prevEl: '.tours__button--prev',
+    nextEl: '.tours__button--next',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      allowTouchMove: true,
+    },
+    768: {
+      slidesPerView: 2,
+      allowTouchMove: true,
+    },
+    1440: {
+      slidesPerView: 3,
+      allowTouchMove: false,
     },
   }
 });

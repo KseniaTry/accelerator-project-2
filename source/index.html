@@ -159,6 +159,7 @@
     </section>
 
     <section class="tours" id="tours" data-test="tours">
+      <div class="tours__main-container">
       <h2 class="tours__title">Ближайшие туры</h2>
       <div class="tours__swiper swiper">
         <div class="tours__swiper-wrapper swiper-wrapper">
@@ -187,14 +188,23 @@
             <table class="tours__parameters">
               <tbody class="tours__parameters-body">
                 <tr class="tours__parameters-titles">
-                  <th class="tours__parameters-title" scope="col">Сложность:</th>
-                  <th class="tours__parameters-title" scope="col">Даты набора:</th>
-                  <th class="tours__parameters-title" scope="col">Группа:</th>
+                  <th class="tours__parameters-title tours__parameters-title--difficulty" scope="col">Сложность:</th>
+                  <th class="tours__parameters-title tours__parameters-title--dates" scope="col">Даты набора:</th>
+                  <th class="tours__parameters-title tours__parameters-title--group" scope="col">Группа:</th>
                 </tr>
                 <tr class="tours__parameters-items">
-                  <td class="tours__parameters-item">4 звезды</td>
+                  <td class="tours__parameters-item">
+                    <div class="tours__rate">
+                      <span class="visually-hidden">4 звезды</span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star"></span>
+                    </div>
+                  </td>
                   <td class="tours__parameters-item">12.06-19.06</td>
-                  <td class="tours__parameters-item">До 15 чел.</td>
+                  <td class="tours__parameters-item">до 15 чел.</td>
                 </tr>
               </tbody>
             </table>
@@ -218,24 +228,35 @@
                 srcset="img/tours/altai/tour-altai-mobile@2x.jpg" alt="Фотография подножия Белухи (Алтай)">
             </picture>
 
-            <p class="tours__location">Алтай</p>
-            <p class="tours__duration-days">14 дней</p>
-            <p class="tours__diration-nights">13 ночей</p>
+            <div class="tours__text-container">
+            <p class="tours__details tours__details--location">Алтай</p>
+            <p class="tours__details tours__details--days">14 дней</p>
+            <p class="tours__details tours__details--nights">13 ночей</p>
             <h3 class="tours__card-title">Путь к подножию Белухи</h3>
             <table class="tours__parameters">
               <tbody class="tours__parameters-body">
                 <tr class="tours__parameters-titles">
-                  <th class="tours__parameters-title" scope="col">Сложность:</th>
-                  <th class="tours__parameters-title" scope="col">Даты набора:</th>
-                  <th class="tours__parameters-title" scope="col">Группа:</th>
+                  <th class="tours__parameters-title tours__parameters-title--difficulty" scope="col">Сложность:</th>
+                  <th class="tours__parameters-title tours__parameters-title--dates" scope="col">Даты набора:</th>
+                  <th class="tours__parameters-title tours__parameters-title--group" scope="col">Группа:</th>
                 </tr>
                 <tr class="tours__parameters-items">
-                  <td class="tours__parameters-item">3 звезды</td>
+                  <td class="tours__parameters-item">
+                    <div class="tours__rate">
+                      <span class="visually-hidden">3 звезды</span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star"></span>
+                      <span class="tours__star"></span>
+                    </div>
+                  </td>
                   <td class="tours__parameters-item">14.06-23.06</td>
                   <td class="tours__parameters-item">До 25 чел.</td>
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
 
           <div class="tours__slide swiper-slide">
@@ -255,24 +276,35 @@
                 srcset="img/tours/adigeya/tour-adygeya-mobile@2x.jpg" alt="Фотография гор в Адыгее">
             </picture>
 
-            <p class="tours__location">Адыгея</p>
-            <p class="tours__duration-days">7 дней</p>
-            <p class="tours__diration-nights">6 ночей</p>
+            <div class="tours__text-container">
+            <p class="tours__details tours__details--location">Адыгея</p>
+            <p class="tours__details tours__details--days">7 дней</p>
+            <p class="tours__details tours__details--nights">6 ночей</p>
             <h3 class="tours__card-title">Через Фишт к Чёрному морю и обратно</h3>
             <table class="tours__parameters">
               <tbody class="tours__parameters-body">
                 <tr class="tours__parameters-titles">
-                  <th class="tours__parameters-title" scope="col">Сложность:</th>
-                  <th class="tours__parameters-title" scope="col">Даты набора:</th>
-                  <th class="tours__parameters-title" scope="col">Группа:</th>
+                  <th class="tours__parameters-title tours__parameters-title--difficulty" scope="col">Сложность:</th>
+                  <th class="tours__parameters-title tours__parameters-title--dates" scope="col">Даты набора:</th>
+                  <th class="tours__parameters-title tours__parameters-title--group" scope="col">Группа:</th>
                 </tr>
                 <tr class="tours__parameters-items">
-                  <td class="tours__parameters-item">4 звезды</td>
+                  <td class="tours__parameters-item">
+                    <div class="tours__rate">
+                      <span class="visually-hidden">4 звезды</span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star"></span>
+                    </div>
+                  </td>
                   <td class="tours__parameters-item">15.07-19.07</td>
                   <td class="tours__parameters-item">До 22 чел.</td>
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
 
           <div class="tours__slide swiper-slide">
@@ -292,24 +324,36 @@
                 srcset="img/tours/ural/tour-ural-mobile@2x.jpg" alt="Фотография гор на Урале">
             </picture>
 
-            <p class="tours__location">Урал</p>
-            <p class="tours__duration-days">9 дней</p>
-            <p class="tours__diration-nights">10 ночей</p>
+            <div class="tours__text-container">
+              <p class="tours__details tours__details--location">Урал</p>
+              <p class="tours__details tours__details--days">9 дней</p>
+              <p class="tours__details tours__details--nights">10 ночей</p>
             <h3 class="tours__card-title">Восхождение Манарага</h3>
             <table class="tours__parameters">
               <tbody class="tours__parameters-body">
                 <tr class="tours__parameters-titles">
-                  <th class="tours__parameters-title" scope="col">Сложность:</th>
-                  <th class="tours__parameters-title" scope="col">Даты набора:</th>
-                  <th class="tours__parameters-title" scope="col">Группа:</th>
+                  <th class="tours__parameters-title tours__parameters-title--difficulty" scope="col">Сложность:</th>
+                  <th class="tours__parameters-title tours__parameters-title--dates" scope="col">Даты набора:</th>
+                  <th class="tours__parameters-title tours__parameters-title--group" scope="col">Группа:</th>
                 </tr>
                 <tr class="tours__parameters-items">
-                  <td class="tours__parameters-item">5 звезд</td>
+                  <td class="tours__parameters-item">
+                      <div class="tours__rate">
+                      <span class="visually-hidden">5 звезд</span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                      <span class="tours__star tours__star--active"></span>
+                    </div></span>
+                  </span>
+                </td>
                   <td class="tours__parameters-item">12.07-19.07</td>
                   <td class="tours__parameters-item">До 7 чел.</td>
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
         </div>
         <div class="tours__buttons-container">
@@ -321,6 +365,7 @@
       </div>
 
       <button class="tours__show-all" type="button">Показать все туры</button>
+    </div>
     </section>
 
     <section class="training" id="training" data-test="training">

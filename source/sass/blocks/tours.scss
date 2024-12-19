@@ -1,11 +1,25 @@
 .tours {
   @media (max-width: $mobile-width-max) {
     padding: 36px 15px 20px;
+    background-image: url("../../img/tours/clouds/clouds-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: bottom -12px right;
+    background-size: 45%;
+  }
+}
+
+.tours__main-container {
+  @media (max-width: $mobile-width-max) {
+    margin: 0 auto;
+    width: $mobile-content-width;
   }
 }
 
 .tours__title {
+  margin: 0;
+
   @media (max-width: $mobile-width-max) {
+    margin-bottom: 42px;
     font-size: 22px;
     line-height: 22px;
     font-weight: 800;
@@ -22,6 +36,7 @@
 
 .tours__slide {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .tours__text-container {
@@ -41,12 +56,14 @@
 
 .tours__details {
   position: relative;
-  margin: 0;
-  font-size: 12px;
-  font-size: 12px;
-  padding: 8px 0;
   display: inline;
-  margin-bottom: 15px;
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 8px 0;
+
+  font-size: 12px;
+  font-size: 12px;
+  font-weight: 500;
 
   &::before {
     content: "";
@@ -58,7 +75,7 @@
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 
-  margin-right: 34px;
+  margin-right: 38px;
   padding: 8px 12px 8px 34px;
   background-color: $extra-color;
 
@@ -78,8 +95,8 @@
   &::before {
     width: 20px;
     height: 20px;
-    left: -26px;
-    top: 7px;
+    left: -32px;
+    top: 8px;
     background-image: url("/__spritemap#sprite-sun-view");
   }
 }
@@ -87,12 +104,13 @@
 .tours__details--nights {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  justify-self: end;
 
   &::before {
     width: 16px;
     height: 16px;
-    left: -26px;
-    top: 7px;
+    left: -31px;
+    top: 10px;
     background-image: url("/__spritemap#sprite-moon-view");
   }
 }
@@ -101,14 +119,113 @@
   grid-column: 1 / 4;
   grid-row: 3 / 4;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
 
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
 }
 
+// таблица с параметрами (дата, сложность, группа)
 .tours__parameters {
+  position: relative;
   grid-column: 1 / 4;
   grid-row: 4 / 5;
+
+  border-collapse: separate;
+  border-spacing: 8px 6px;
+  margin: -8px;
+  margin-bottom: -9px;
+  text-align: left;
+}
+
+.tours__parameters::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tours__parameters-title {
+  padding: 0;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}
+
+.tours__parameters-title--difficulty {
+  width: 32%;
+}
+
+.tours__parameters-title--dates {
+  width: 31%;
+}
+
+.tours__parameters-title--group {
+  width: 25%;
+}
+
+.tours__parameters-item {
+  padding: 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+}
+
+// рейтинг
+.tours__rate {}
+
+.tours__star {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  mask-image: url("/__spritemap#sprite-empty-star-view");
+  mask-repeat: no-repeat;
+  margin-left: -2px;
+  background-color: $basic-light-color;
+}
+
+.tours__star--active {
+  mask-image: url("/__spritemap#sprite-full-star-view");
+}
+
+// swiper настройки
+.tours__buttons-container {
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
+}
+
+// кнопка показать все туры
+.tours__show-all {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  font-family: $main-font;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $basic-dark-color;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  padding: 10px 34px 10px 15px;
+  margin: 0 auto;
+}
+
+.tours__show-all::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  width: 9px;
+  height: 16px;
+  mask-image: url("/__spritemap#sprite-right-arrow-view");
+  mask-repeat: no-repeat;
+  background-color: $basic-dark-color;
 }
