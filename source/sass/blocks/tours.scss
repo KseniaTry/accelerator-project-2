@@ -17,6 +17,7 @@
 }
 
 .tours__title {
+  position: relative;
   margin: 0;
 
   @media (max-width: $mobile-width-max) {
@@ -30,6 +31,20 @@
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
 
   @media (min-width: $desktop-width-min) {}
+}
+
+.tours__title::before {
+  content: attr(data-title);
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 50%;
+  z-index: -1;
+
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 800;
+  color: rgba(45, 56, 63, 0.03);
 }
 
 .tours__swiper {}
