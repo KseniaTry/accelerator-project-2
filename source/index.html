@@ -44,7 +44,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="page-main">
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Организация походов в горы</h1>
       <div class="hero__swiper swiper">
@@ -166,18 +166,18 @@
             <div class="tours__slide swiper-slide">
               <picture>
                 <source media="(min-width: 1440px)" width="380" height="416" type="image/webp"
-                  srcset="img/tours/kavkaz/tour-kavraz-desktop@1x.webp 1x, img/tours/kavkaz/tour-kavraz-desktop@2x.webp 2x">
+                  srcset="img/tours/kavkaz/tour-kavkaz-desktop@1x.webp 1x, img/tours/kavkaz/tour-kavkaz-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)" width="330" height="416" type="image/webp"
-                  srcset="img/tours/kavkaz/tour-kavraz-tablet@1x.webp 1x, img/tours/kavkaz/tour-kavraz-tablet@2x.webp 2x">
+                  srcset="img/tours/kavkaz/tour-kavkaz-tablet@1x.webp 1x, img/tours/kavkaz/tour-kavkaz-tablet@2x.webp 2x">
                 <source width="290" height="416" type="image/webp"
-                  srcset="img/tours/kavkaz/tour-kavraz-mobile@1x.webp 1x, img/tours/kavkaz/tour-kavraz-mobile@2x.webp 2x">
+                  srcset="img/tours/kavkaz/tour-kavkaz-mobile@1x.webp 1x, img/tours/kavkaz/tour-kavkaz-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1440px)" width="380" height="416" type="image/jpg"
-                  srcset="img/tours/kavkaz/tour-kavraz-desktop@1x.jpg 1x, img/tours/kavkaz/tour-kavraz-desktop@2x.jpg 2x">
+                  srcset="img/tours/kavkaz/tour-kavkaz-desktop@1x.jpg 1x, img/tours/kavkaz/tour-kavkaz-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" width="330" height="416" type="image/jpg"
-                  srcset="img/tours/kavkaz/tour-kavraz-tablet@1x.jpg 1x, img/tours/kavkaz/tour-kavraz-tablet@2x.jpg 2x">
-                <img class="tours__image" src="img/tours/kavkaz/tour-kavraz-mobile@1x.jpg" width="290" height="416"
-                  srcset="img/tours/kavkaz/tour-kavraz-mobile@2x.jpg" alt="Фотография Эльбруса (Кавказ)">
+                  srcset="img/tours/kavkaz/tour-kavkaz-tablet@1x.jpg 1x, img/tours/kavkaz/tour-kavkaz-tablet@2x.jpg 2x">
+                <img class="tours__image" src="img/tours/kavkaz/tour-kavkaz-mobile@1x.jpg" width="290" height="416"
+                  srcset="img/tours/kavkaz/tour-kavkaz-mobile@2x.jpg" alt="Фотография Эльбруса (Кавказ)">
               </picture>
 
               <div class="tours__text-container">
@@ -209,7 +209,7 @@
                           <span class="tours__star"></span>
                         </div>
                       </td>
-                      <td class="tours__parameters-item">12.06-19.06</td>
+                      <td class="tours__parameters-item">12.06–19.06</td>
                       <td class="tours__parameters-item">до 15 чел.</td>
                     </tr>
                   </tbody>
@@ -262,8 +262,8 @@
                           <span class="tours__star"></span>
                         </div>
                       </td>
-                      <td class="tours__parameters-item">14.06-23.06</td>
-                      <td class="tours__parameters-item">До 25 чел.</td>
+                      <td class="tours__parameters-item">14.06–23.06</td>
+                      <td class="tours__parameters-item">до 25 чел.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -316,7 +316,7 @@
                         </div>
                       </td>
                       <td class="tours__parameters-item">15.07-19.07</td>
-                      <td class="tours__parameters-item">До 22 чел.</td>
+                      <td class="tours__parameters-item">до 22 чел.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -369,22 +369,23 @@
                         </div></span>
                         </span>
                       </td>
-                      <td class="tours__parameters-item">12.07-19.07</td>
-                      <td class="tours__parameters-item">До 7 чел.</td>
+                      <td class="tours__parameters-item">12.07–19.07</td>
+                      <td class="tours__parameters-item">до 7 чел.</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-          <div class="tours__buttons-container">
-            <button class="tours__button tours__button--prev swiper-button-prev" type="button"
-              aria-label="Кнопка переключения предыдущего слайда"></button>
-            <button class="tours__button tours__button--next swiper-button-next" type="button"
-              aria-label="Кнопка переключения следующего слайда"></button>
-          </div>
+
         </div>
 
+        <div class="tours__buttons-container arrow">
+          <button class="tours__button tours__button--prev arrow__button arrow__button--prev swiper-button-prev" type="button"
+            aria-label="Кнопка переключения предыдущего слайда"></button>
+          <button class="tours__button tours__button--next arrow__button arrow__button--next swiper-button-next" type="button"
+            aria-label="Кнопка переключения следующего слайда"></button>
+        </div>
         <a class="tours__show-all" href="#">Показать все туры</a>
       </div>
     </section>

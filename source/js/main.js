@@ -51,8 +51,7 @@ const toursSlider = document.querySelector('.tours__swiper');
 new Swiper(toursSlider, {
   slideClass: 'tours__slide',
   modules: [Navigation, Pagination],
-  loop: false,
-  centeredSlides: true,
+  loop: true, // слайдер зациклен
   navigation: {
     prevEl: '.tours__button--prev',
     nextEl: '.tours__button--next',
@@ -61,10 +60,11 @@ new Swiper(toursSlider, {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      allowTouchMove: true,
+      allowTouchMove: true, // возможность переключения тачем
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 'auto',
+      spaceBetween: 18,
       allowTouchMove: true,
     },
     1440: {
