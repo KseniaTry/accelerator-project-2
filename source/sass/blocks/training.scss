@@ -3,9 +3,14 @@
     padding: 36px 15px 20px;
   }
 
-  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative;
+    padding: 60px 45px 40px;
+  }
 
-  @media (min-width: $desktop-width-min) {}
+  @media (min-width: $desktop-width-min) {
+    position: relative;
+  }
 }
 
 .training__main-container {
@@ -15,59 +20,97 @@
     width: $mobile-content-width;
   }
 
-  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: $tablet-content-width;
+  }
 
-  @media (min-width: $desktop-width-min) {}
+  @media (min-width: $desktop-width-min) {
+    width: $desktop-content-width;
+  }
 
   p {
+    margin: 0;
+
     @media (max-width: $mobile-width-max) {
-      margin: 0;
       margin-bottom: 25px;
       font-size: 14px;
       line-height: 20px;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  br {
+    @media (max-width: $mobile-width-max) {
+      display: none;
     }
   }
 }
 
 .training__title {
-  margin: 0;
   margin-bottom: 35px;
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: 800;
 }
 
 .training__subtitle {
   margin: 0;
-  margin-bottom: 25px;
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: 800;
-}
 
-.training__swiper {
+  font-weight: 800;
+
   @media (max-width: $mobile-width-max) {
     margin-bottom: 25px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 35px;
+    font-size: 25px;
+    line-height: 25px;
   }
 }
 
+.training__swiper {
+  margin-bottom: 25px;
+}
+
 .training__slide {
-  width: 390px;
-  height: 356px;
+  @media (max-width: $mobile-width-max) {
+    width: 390px;
+    height: 356px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 212px;
+    height: 388px;
+    background-color: $basic-light-color;
+  }
 }
 
 .training__slide-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 200px min-content min-content;
   row-gap: 15px;
   column-gap: 10px;
   padding: 15px;
   border: 1px solid #0266C11A;
-  height: 356px;
+
+  @media (max-width: $mobile-width-max) {
+    height: 356px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 212px;
+    height: 388px;
+  }
 
   h4 {
     margin: 0;
-    width: 144px;
+    width: min-content;
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
@@ -83,8 +126,28 @@
 
 .training__image-container {
   grid-column: 1 / 3;
-  width: 100%;
   height: 200px;
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 183px;
+  }
+}
+
+.training__image {
+  width: 260px;
+  height: 200px;
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: 243px;
+  }
 }
 
 .training__vk-icon {
@@ -119,7 +182,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: 42px;
+    top: 193px;
     right: 35px;
   }
 
@@ -135,6 +198,18 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 104px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .training__process-list {
@@ -152,16 +227,40 @@
     width: 2px;
     height: 183px;
     background-color: $extra-color;
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      display: none;
+    }
   }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 104px;
+    width: 666px;
+  }
+
 }
 
 .training__process-item {
   position: relative;
-  margin-bottom: 25px;
-  margin-left: 63px;
-  width: 200px;
-  font-size: 12px;
-  line-height: 18px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 25px;
+    margin-left: 63px;
+    width: 200px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-left: 35px;
+    width: 225px;
+    font-size: 14px;
+    line-height: 22px;
+  }
 
   &::after {
     content: "";
@@ -173,6 +272,10 @@
     top: 9px;
     left: -63px;
     background-color: $extra-color;
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      display: none;
+    }
   }
 
   &::before {
@@ -184,6 +287,11 @@
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    top: 3px;
+    left: -35px;
+    }
   }
 }
 
@@ -191,18 +299,39 @@
   margin-bottom: 0;
 }
 
-.training__process-item--map::before {
-  background-image: url("../../__spritemap#sprite-map-view");
+.training__process-item--map {
+
+  &::before {
+    background-image: url("../../__spritemap#sprite-map-view");
+  }
 }
 
-.training__process-item--boot::before {
-  background-image: url("../../__spritemap#sprite-boot-view");
+.training__process-item--boot {
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    order: 2;
+  }
+
+  &::before {
+    background-image: url("../../__spritemap#sprite-boot-view");
+  }
 }
 
-.training__process-item--pine::before {
-  background-image: url("../../__spritemap#sprite-pine-tree-view");
+.training__process-item--pine {
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    order: 3;
+  }
+
+  &::before {
+    background-image: url("../../__spritemap#sprite-pine-tree-view");
+  }
 }
 
-.training__process-item--mountain::before {
-  background-image: url("../../__spritemap#sprite-mountain-view");
+.training__process-item--mountain {
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    order: 1;
+  }
+
+  &::before {
+    background-image: url("../../__spritemap#sprite-mountain-view");
+  }
 }

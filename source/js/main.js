@@ -90,13 +90,14 @@ new Swiper(trainingSlider, {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      allowTouchMove: true,
-      initialSlide: 2, // возможность переключения тачем
+      allowTouchMove: true, // возможность переключения тачем
+      initialSlide: 2,
     },
     768: {
-      slidesPerView: 'auto',
-      spaceBetween: 18,
+      slidesPerView: 3,
+      spaceBetween: 20,
       allowTouchMove: true,
+      initialSlide: 0,
     },
     1440: {
       slidesPerView: 3,
