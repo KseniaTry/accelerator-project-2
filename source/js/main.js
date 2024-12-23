@@ -74,3 +74,34 @@ new Swiper(toursSlider, {
     },
   }
 });
+
+// TRAINING swiper slider
+const trainingSlider = document.querySelector('.training__swiper');
+
+new Swiper(trainingSlider, {
+  slideClass: 'training__slide',
+  modules: [Navigation, Pagination],
+  loop: true, // слайдер зациклен
+  navigation: {
+    prevEl: '.training__button--prev',
+    nextEl: '.training__button--next',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      allowTouchMove: true,
+      initialSlide: 2, // возможность переключения тачем
+    },
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 18,
+      allowTouchMove: true,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      allowTouchMove: false,
+    },
+  }
+});

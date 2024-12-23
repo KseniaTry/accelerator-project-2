@@ -1,0 +1,20 @@
+.social-list {}
+
+.social-list__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.social-list__link--vk {
+  mask-image: url("/__spritemap#sprite-vk-view");
+  background-color: $basic-dark-color;
+  mask-size: 14px 8px;
+}
+
+.social-list__link--ok {}
+
+.social-list__link--reddit {}
