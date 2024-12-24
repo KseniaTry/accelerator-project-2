@@ -100,8 +100,8 @@ new Swiper(trainingSlider, {
       initialSlide: 0,
     },
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 4,
+      spaceBetween: 20,
       allowTouchMove: false,
     },
   }
