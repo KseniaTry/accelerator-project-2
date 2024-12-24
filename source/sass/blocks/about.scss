@@ -2,12 +2,23 @@
   @media (max-width: $mobile-width-max) {
     padding: 20px 0 15px;
   }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    padding: 40px 48px 40px 0;
+    display: flex;
+    align-items: center;
+  }
 }
 
-.about__main-container {}
 
 .about__image {
-  margin-bottom: 11px;
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 11px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 45px;
+  }
 }
 
 .about__text-container {
@@ -15,6 +26,10 @@
 
   @media (max-width: $mobile-width-max) {
     width: $mobile-content-width;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 270px;
   }
 
   h2 {
@@ -30,7 +45,12 @@
       line-height: 22px;
     }
 
-    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-top: 20px;
+      margin-bottom: 46px;
+      font-size: 25px;
+      line-height: 25px;
+    }
 
     @media (min-width: $desktop-width-min) {}
   }
@@ -73,7 +93,11 @@
       line-height: 16px;
     }
 
-    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-bottom: 13px; // 15
+      font-size: 18px;
+      line-height: 18px;
+    }
 
     @media (min-width: $desktop-width-min) {}
   }
@@ -87,8 +111,18 @@
       line-height: 20px;
     }
 
-    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-bottom: 28px; //25
+      font-size: 16px;
+      line-height: 24px;
+    }
 
     @media (min-width: $desktop-width-min) {}
+  }
+
+  p:last-child {
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-bottom: 0;
+    }
   }
 }
