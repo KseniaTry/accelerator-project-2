@@ -106,3 +106,34 @@ new Swiper(trainingSlider, {
     },
   }
 });
+
+
+// REVIEWS swiper slider
+const reviewsSlider = document.querySelector('.reviews__swiper');
+
+new Swiper(reviewsSlider, {
+  slideClass: 'reviews__slide',
+  modules: [Navigation, Pagination],
+  loop: true, // слайдер зациклен
+  navigation: {
+    prevEl: '.reviews__button--prev',
+    nextEl: '.reviews__button--next',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      allowTouchMove: true, // возможность переключения тачем
+    },
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+      allowTouchMove: true,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      allowTouchMove: false,
+    },
+  }
+});

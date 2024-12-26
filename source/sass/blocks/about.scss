@@ -1,6 +1,6 @@
 .about {
   @media (max-width: $mobile-width-max) {
-    padding: 20px 0 15px;
+    padding: 20px 0;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -147,7 +147,7 @@
   }
 
   p:last-child {
-    @media (min-width: $tablet-width-min) {
+    @media (max-width: $tablet-width-max) {
       margin-bottom: 0;
     }
   }
