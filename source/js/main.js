@@ -131,8 +131,8 @@ new Swiper(reviewsSlider, {
       allowTouchMove: true,
     },
     1440: {
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: 'auto',
+      spaceBetween: 120,
       allowTouchMove: false,
     },
   }
