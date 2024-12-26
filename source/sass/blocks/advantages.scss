@@ -1,0 +1,107 @@
+.advantages {
+  @media (max-width: $mobile-width-max) {
+    padding: 36px 15px 20px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+
+  @media (min-width: $desktop-width-min) {}
+}
+
+.advantages__main-container {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-content-width;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  font-weight: 800;
+  text-align: center;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 37px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.advantages__item {
+  position: relative;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  text-align: center;
+
+  @media (max-width: $mobile-width-max) {
+    padding: 81px 9px 20px 9px;
+    width: 290px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid $extra-color;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 600;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    @media (max-width: $mobile-width-max) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
+
+.advantages__item--safety::before {
+  background-image: url("/__spritemap#sprite-safety-view");
+}
+
+.advantages__item--crown::before {
+  background-image: url("/__spritemap#sprite-crown-view");
+}
+
+.advantages__item--boot::before {
+  background-image: url("/__spritemap#sprite-blue-boot-view");
+}
+
+.advantages__item--map::before {
+  background-image: url("/__spritemap#sprite-way-view");
+}
+
+.advantages__item--leaf::before {
+  background-image: url("/__spritemap#sprite-leaf-view");
+}
