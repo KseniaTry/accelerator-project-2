@@ -3,7 +3,9 @@
     padding: 36px 15px 20px;
   }
 
-  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    padding: 60px 45px 40px;
+  }
 
   @media (min-width: $desktop-width-min) {}
 }
@@ -23,9 +25,15 @@
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 37px;
-    font-size: 22px;
-    line-height: 22px;
   }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 60px;
+  }
+}
+
+.advantages__title::before {
+  left: 36px;
 }
 
 .advantages__list {
@@ -35,9 +43,17 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  gap: 14px;
+
+  @media (max-width: $mobile-width-max) {
+    justify-content: space-between;
+    gap: 14px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .advantages__item {
@@ -50,19 +66,35 @@
     width: 290px;
   }
 
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    padding: 102px 19px 30px;
+    width: 324px;
+    height: 340px;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    top: 40px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    width: 42px;
-    height: 42px;
     background-size: 24px 24px;
     background-position: center;
     background-repeat: no-repeat;
     border: 1px solid $extra-color;
+
+    @media (max-width: $mobile-width-max) {
+      top: 40px;
+      width: 42px;
+      height: 42px;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      top: 53px;
+      width: 48px;
+      height: 48px;
+    }
+
   }
 
   h3 {
@@ -74,6 +106,12 @@
       font-size: 14px;
       line-height: 14px;
     }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
 
   p {
@@ -82,6 +120,12 @@
     @media (max-width: $mobile-width-max) {
       font-size: 12px;
       line-height: 18px;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      width: 284px;
+      font-size: 14px;
+      line-height: 22px;
     }
   }
 }
