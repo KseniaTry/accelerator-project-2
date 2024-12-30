@@ -29,7 +29,7 @@
   @media (min-width: $desktop-width-min) {
     margin: 0;
     margin-left: 130px;
-    width: 1320px;
+    width: 1310px;
   }
 }
 
@@ -186,4 +186,8 @@
     top: 128px;
     right: 110px;
   }
+}
+
+.advantages__button--prev {
+  background-color: $extra-color;
 }

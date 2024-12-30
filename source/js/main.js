@@ -137,3 +137,89 @@ new Swiper(reviewsSlider, {
     },
   }
 });
+
+// ADV блок. свайпер. инициализация свайпера происходит только при переключении на десктопную версию
+const advSlider = document.querySelector('.advantages__swiper');
+const advList = document.querySelector('.advantages__list');
+const advSwiperContainer = document.querySelector('.advantages__swiper');
+const advItems = document.querySelectorAll('.advantages__item');
+const advButtonsContainer = document.querySelector('.advantages__buttons-container');
+const breakpoint = window.matchMedia("(min-width: 1440px)");
+const advNextButton = document.querySelector('.advantages__button--next');
+const SLIDES_COUNT = 4;
+let advSwiper;
+
+const initSwiper = () => {
+  advSwiper = new Swiper(advSlider, {
+    slideClass: 'advantages__item',
+    modules: [Navigation, Pagination],
+    navigation: {
+      prevEl: '.advantages__button--prev',
+      nextEl: '.advantages__button--next',
+      clickable: true,
+    },
+    direction: 'horizontal',
+    slidesPerColumn: 1,
+    loop: true,
+    slidesPerView: 'auto',
+    initialSlide: 2,
+    spaceBetween: 30,
+    slidesOffsetAfter: 0,
+    allowTouchMove: false,
+    centeredSlides: true,
+  });
+
+  advSwiper.slideToLoop(2, 0);
+
+  advNextButton.addEventListener('click', () => {
+    let activeSlideIndex = advSwiper.realIndex;
+    let nextSlideIndex = activeSlideIndex + 2;
+
+    if (nextSlideIndex > SLIDES_COUNT) {
+      nextSlideIndex = 1;
+    }
+
+    advSwiper.slideToLoop(nextSlideIndex);
+
+    console.log('active ' + activeSlideIndex);
+    console.log('next ' + nextSlideIndex);
+  })
+}
+
+
+const addSwiperClass = () => {
+  advSwiperContainer.classList.add('swiper');
+  advList.classList.add('swiper-wrapper');
+  advButtonsContainer.style.display = 'block';
+
+  advItems.forEach((advItem) => {
+    advItem.classList.add('swiper-slide');
+  })
+}
+
+const removeSwiperClass = () => {
+  advSwiperContainer.classList.remove('swiper');
+  advList.classList.remove('swiper-wrapper');
+  advButtonsContainer.style.display = 'none';
+
+  advItems.forEach((advItem) => {
+    advItem.classList.remove('swiper-slide');
+  });
+}
+
+if (window.innerWidth >= 1440) {
+  addSwiperClass();
+  initSwiper();
+}
+
+const breakpointChecker = () => {
+  if (breakpoint.matches) {
+    addSwiperClass();
+    initSwiper();
+  } else {
+    removeSwiperClass();
+    advSwiper.destroy();
+  }
+};
+
+breakpoint.addEventListener("change", breakpointChecker);
