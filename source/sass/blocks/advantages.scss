@@ -229,9 +229,12 @@
 }
 
 .advantages__buttons-container {
-  position: absolute;
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
 
   @media (min-width: $desktop-width-min) {
+    position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translate(-50%, -50%);

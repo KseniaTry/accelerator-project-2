@@ -555,7 +555,7 @@
       <div class="reviews__main-container">
         <h3 class="reviews__title title" data-title="Отзывы">Отзывы</h3>
         <div class="reviews__swiper swiper">
-          <div class="reviews__swiper-wrapper swiper-wrapper">
+          <div class="reviews__swiper-wrapper swiper-wrapper grid-container">
             <div class="reviews__slide swiper-slide">
               <div class="reviews__slide-container">
                 <picture>
@@ -699,8 +699,10 @@
             <li class="advantages__item advantages__item--crown">
               <h3>Экспертиза и знания</h3>
               <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
-                <br>Это<br> гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом
-                без опасений.</p>
+                <br>Это<br> гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться
+                опытом
+                без опасений.
+              </p>
             </li>
             <li class="advantages__item advantages__item--boot">
               <h3>Оборудование и снаряжение</h3>
@@ -723,17 +725,19 @@
           </ul>
         </div>
 
-          <div class="advantages__buttons-container arrow">
-            <button class="advantages__button advantages__button--prev arrow__button arrow__button--prev swiper-button-prev"
-              type="button" aria-label="Кнопка переключения предыдущего слайда"></button>
-            <button class="advantages__button advantages__button--next arrow__button arrow__button--next swiper-button-next"
-              type="button" aria-label="Кнопка переключения следующего слайда"></button>
-          </div>
+        <div class="advantages__buttons-container arrow">
+          <button
+            class="advantages__button advantages__button--prev arrow__button arrow__button--prev swiper-button-prev"
+            type="button" aria-label="Кнопка переключения предыдущего слайда"></button>
+          <button
+            class="advantages__button advantages__button--next arrow__button arrow__button--next swiper-button-next"
+            type="button" aria-label="Кнопка переключения следующего слайда"></button>
         </div>
+      </div>
     </section>
 
     <section class="gallery" id="gallery" data-test="gallery">
-      <h2 class="gallery__title">Фотогалерея</h2>
+      <h2 class="gallery__title title" data-title="Фотогалерея">Фотогалерея</h2>
       <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
         нашего сайта.</p>
       <div class="gallery__swiper swiper">
@@ -745,118 +749,122 @@
               <source media="(min-width: 768px)" width="253" height="418" type="image/webp"
                 srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x">
               <source width="158" height="266" type="image/webp"
-                srcset="img/about/gym-mobile@1x.webp 1x, img/about/gym-mobile@2x.webp 2x">
+                srcset="img/gallery/slide-1/photo-1-mobile@1x.webp 1x, img/gallery/slide-1/photo-1-mobile@2x.webp 2x">
 
               <source media="(min-width: 1440px)" width="284" height="463" type="image/jpg"
                 srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="253" height="418" type="image/jpg"
                 srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/about/gym-mobile@1x.jpg" width="158" height="266"
-                srcset="img/about/gym-mobile@2x.jpg" alt="Фотография мужчины на фоне гор">
+              <img class="gallery__image" src="img/gallery/slide-1/photo-1-mobile@1x.jpg" width="158" height="266"
+                srcset="img/gallery/slide-1/photo-1-mobile@2x.jpg" alt="Фотография мужчины на фоне гор">
             </picture>
           </div>
           <div class="gallery__slide swiper-slide">
             <picture>
-              <source media="(min-width: 1440px)" width="284" height="228" type="image/webp"
+              <!-- <source media="(min-width: 1440px)" width="284" height="228" type="image/webp"
                 srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" width="253" height="206" type="image/webp"
-                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x">
-              <source width="158" height="130" type="image/webp"
-                srcset="img/about/gym-mobile@1x.webp 1x, img/about/gym-mobile@2x.webp 2x">
+                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x"> -->
+              <source width="157" height="135" type="image/webp"
+                srcset="img/gallery/slide-2/photo-2-mobile@1x.webp 1x, img/gallery/slide-2/photo-2-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" width="284" height="228" type="image/jpg"
+              <!-- <source media="(min-width: 1440px)" width="284" height="228" type="image/jpg"
                 srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="253" height="206" type="image/jpg"
-                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/about/gym-mobile@1x.jpg" width="158" height="130"
-                srcset="img/about/gym-mobile@2x.jpg" alt="Фотография компании возле костра">
+                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x"> -->
+              <img class="gallery__image" src="img/gallery/slide-2/photo-2-mobile@1x.jpg" width="158" height="135"
+                srcset="img/gallery/slide-2/photo-2-mobile@2x.jpg" alt="Фотография компании возле костра">
             </picture>
-          </div>
-          <div class="gallery__slide swiper-slide">
+
             <picture>
-              <source media="(min-width: 1440px)" width="284" height="228" type="image/webp"
+              <!-- <source media="(min-width: 1440px)" width="284" height="228" type="image/webp"
                 srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" width="253" height="206" type="image/webp"
-                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x">
-              <source width="158" height="130" type="image/webp"
-                srcset="img/about/gym-mobile@1x.webp 1x, img/about/gym-mobile@2x.webp 2x">
+                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x"> -->
+              <source width="157" height="125" type="image/webp"
+                srcset="img/gallery/slide-3/photo-3-mobile@1x.webp 1x, img/gallery/slide-3/photo-3-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" width="284" height="228" type="image/jpg"
+              <!-- <source media="(min-width: 1440px)" width="284" height="228" type="image/jpg"
                 srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="253" height="206" type="image/jpg"
-                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/about/gym-mobile@1x.jpg" width="158" height="130"
-                srcset="img/about/gym-mobile@2x.jpg" alt="Фотография компаса в руке">
+                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x"> -->
+              <img class="gallery__image" src="img/gallery/slide-3/photo-3-mobile@1x.jpg" width="158" height="125"
+                srcset="img/gallery/slide-3/photo-3-mobile@2x.jpg" alt="Фотография компаса в руке">
             </picture>
           </div>
           <div class="gallery__slide swiper-slide">
             <picture>
-              <source media="(min-width: 1440px)" width="284" height="463" type="image/webp"
+              <!-- <source media="(min-width: 1440px)" width="284" height="463" type="image/webp"
                 srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" width="253" height="418" type="image/webp"
-                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x">
+                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x"> -->
               <source width="158" height="266" type="image/webp"
-                srcset="img/about/gym-mobile@1x.webp 1x, img/about/gym-mobile@2x.webp 2x">
+                srcset="img/gallery/slide-4/photo-4-mobile@1x.webp 1x, img/gallery/slide-4/photo-4-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" width="284" height="463" type="image/jpg"
+              <!-- <source media="(min-width: 1440px)" width="284" height="463" type="image/jpg"
                 srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="253" height="418" type="image/jpg"
-                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/about/gym-mobile@1x.jpg" width="158" height="266"
-                srcset="img/about/gym-mobile@2x.jpg" alt="Фотография идущих учатников похода в горах">
+                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x"> -->
+              <img class="gallery__image" src="img/gallery/slide-4/photo-4-mobile@1x.jpg" width="158" height="266"
+                srcset="img/gallery/slide-4/photo-4-mobile@2x.jpg" alt="Фотография идущих учатников похода в горах">
             </picture>
           </div>
           <div class="gallery__slide swiper-slide">
             <picture>
-              <source media="(min-width: 1440px)" width="284" height="228" type="image/webp"
+              <!-- <source media="(min-width: 1440px)" width="284" height="228" type="image/webp"
                 srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" width="253" height="206" type="image/webp"
-                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x">
+                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x"> -->
               <source width="158" height="130" type="image/webp"
-                srcset="img/about/gym-mobile@1x.webp 1x, img/about/gym-mobile@2x.webp 2x">
+                srcset="img/gallery/slide-5/photo-5-mobile@1x.webp 1x, img/gallery/slide-5/photo-5-mobile@2x.webp 2x">
 
+              <!-- <source media="(min-width: 1440px)" width="284" height="228" type="image/jpg"
+                srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="253" height="206" type="image/jpg"
+                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x"> -->
+              <img class="gallery__image" src="img/gallery/slide-5/photo-5-mobile@1x.jpg" width="158" height="130"
+                srcset="img/gallery/slide-5/photo-5-mobile@2x.jpg" alt="Фотография участников похода зимой возле подножия горы">
+            </picture>
+
+            <picture>
+              <!-- <source media="(min-width: 1440px)" width="284" height="228" type="image/webp"
+                srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" width="253" height="206" type="image/webp"
+                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x"> -->
+              <source width="158" height="130" type="image/webp"
+                srcset="img/gallery/slide-6/photo-6-mobile@1x.webp 1x, img/gallery/slide-6/photo-6-mobile@2x.webp 2x">
+              <!--
               <source media="(min-width: 1440px)" width="284" height="228" type="image/jpg"
                 srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="253" height="206" type="image/jpg"
-                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/about/gym-mobile@1x.jpg" width="158" height="130"
-                srcset="img/about/gym-mobile@2x.jpg" alt="Фотография участников похода зимой возле подножия горы">
+                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x"> -->
+              <img class="gallery__image" src="img/gallery/slide-6/photo-6-mobile@1x.jpg" width="158" height="130"
+                srcset="img/gallery/slide-6/photo-6-mobile@2x.jpg" alt="Фотография палатки на фоне звездного неба">
             </picture>
           </div>
           <div class="gallery__slide swiper-slide">
             <picture>
-              <source media="(min-width: 1440px)" width="284" height="228" type="image/webp"
-                srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" width="253" height="206" type="image/webp"
-                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x">
-              <source width="158" height="130" type="image/webp"
-                srcset="img/about/gym-mobile@1x.webp 1x, img/about/gym-mobile@2x.webp 2x">
-
-              <source media="(min-width: 1440px)" width="284" height="228" type="image/jpg"
-                srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" width="253" height="206" type="image/jpg"
-                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/about/gym-mobile@1x.jpg" width="158" height="130"
-                srcset="img/about/gym-mobile@2x.jpg" alt="Фотография палатки на фоне звездного неба">
-            </picture>
-          </div>
-          <div class="gallery__slide swiper-slide">
-            <picture>
-              <source media="(min-width: 1440px)" width="284" height="463" type="image/webp"
+              <!-- <source media="(min-width: 1440px)" width="284" height="463" type="image/webp"
                 srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x">
               <source media="(min-width: 768px)" width="253" height="418" type="image/webp"
-                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x">
+                srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x"> -->
               <source width="158" height="266" type="image/webp"
-                srcset="img/about/gym-mobile@1x.webp 1x, img/about/gym-mobile@2x.webp 2x">
+                srcset="img/gallery/slide-7/photo-7-mobile@1x.webp 1x, img/gallery/slide-7/photo-7-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" width="284" height="463" type="image/jpg"
+              <!-- <source media="(min-width: 1440px)" width="284" height="463" type="image/jpg"
                 srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="253" height="418" type="image/jpg"
-                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x">
-              <img class="gallery__image" src="img/about/gym-mobile@1x.jpg" width="158" height="266"
-                srcset="img/about/gym-mobile@2x.jpg" alt="Фотография двух разговаривающих мужчин в лесу">
+                srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x"> -->
+              <img class="gallery__image" src="img/gallery/slide-7/photo-7-mobile@1x.jpg" width="158" height="266"
+                srcset="img/gallery/slide-7/photo-7-mobile@2x.jpg" alt="Фотография двух разговаривающих мужчин в лесу">
             </picture>
           </div>
+        </div>
+        <div class="gallery__buttons-container arrow">
+          <button class="gallery__button gallery__button--prev arrow__button arrow__button--prev swiper-button-prev"
+            type="button" aria-label="Кнопка переключения предыдущего слайда"></button>
+          <button class="gallery__button gallery__button--next arrow__button arrow__button--next swiper-button-next"
+            type="button" aria-label="Кнопка переключения следующего слайда"></button>
         </div>
       </div>
     </section>

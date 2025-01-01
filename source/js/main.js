@@ -1,6 +1,6 @@
 // https://swiperjs.com/get-started#installation
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Grid } from "swiper/modules";
 import 'swiper/css';
 
 
@@ -143,7 +143,6 @@ const advSlider = document.querySelector('.advantages__swiper');
 const advList = document.querySelector('.advantages__list');
 const advSwiperContainer = document.querySelector('.advantages__swiper');
 const advItems = document.querySelectorAll('.advantages__item');
-const advButtonsContainer = document.querySelector('.advantages__buttons-container');
 const breakpoint = window.matchMedia("(min-width: 1440px)");
 const advNextButton = document.querySelector('.advantages__button--next');
 const SLIDES_COUNT = 4;
@@ -190,7 +189,6 @@ const initSwiper = () => {
 const addSwiperClass = () => {
   advSwiperContainer.classList.add('swiper');
   advList.classList.add('swiper-wrapper');
-  advButtonsContainer.style.display = 'block';
 
   advItems.forEach((advItem) => {
     advItem.classList.add('swiper-slide');
@@ -200,7 +198,6 @@ const addSwiperClass = () => {
 const removeSwiperClass = () => {
   advSwiperContainer.classList.remove('swiper');
   advList.classList.remove('swiper-wrapper');
-  advButtonsContainer.style.display = 'none';
 
   advItems.forEach((advItem) => {
     advItem.classList.remove('swiper-slide');
@@ -223,3 +220,36 @@ const breakpointChecker = () => {
 };
 
 breakpoint.addEventListener("change", breakpointChecker);
+
+// GALLERY блок. свайпер. инициализация свайпера происходит только при переключении на десктопную версию
+const gallerySlider = document.querySelector('.gallery__swiper')
+
+advSwiper = new Swiper(gallerySlider, {
+  slideClass: 'gallery__slide',
+  modules: [Navigation, Grid],
+  navigation: {
+    prevEl: '.gallery__button--prev',
+    nextEl: '.gallery__button--next',
+    clickable: true,
+  },
+  loop: true,
+  allowTouchMove: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 6,
+      grid: {
+        rows: 1,
+        fill: "fill",
+    },
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 5,
+      grid: {
+        rows: 1,
+        fill: "fill",
+    },
+    },
+  },
+});
