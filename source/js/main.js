@@ -2,6 +2,7 @@
 import Swiper from "swiper";
 import { Navigation, Pagination, Grid } from "swiper/modules";
 import 'swiper/css';
+import { addSwiperClass, removeSwiperClass } from "./util";
 
 
 // header меню
@@ -143,12 +144,12 @@ const advSlider = document.querySelector('.advantages__swiper');
 const advList = document.querySelector('.advantages__list');
 const advSwiperContainer = document.querySelector('.advantages__swiper');
 const advItems = document.querySelectorAll('.advantages__item');
-const breakpoint = window.matchMedia("(min-width: 1440px)");
+const advBreakpoint = window.matchMedia("(min-width: 1440px)");
 const advNextButton = document.querySelector('.advantages__button--next');
 const SLIDES_COUNT = 4;
 let advSwiper;
 
-const initSwiper = () => {
+const initAdvSwiper = () => {
   advSwiper = new Swiper(advSlider, {
     slideClass: 'advantages__item',
     modules: [Navigation, Pagination],
@@ -185,71 +186,76 @@ const initSwiper = () => {
   })
 }
 
-
-const addSwiperClass = () => {
-  advSwiperContainer.classList.add('swiper');
-  advList.classList.add('swiper-wrapper');
-
-  advItems.forEach((advItem) => {
-    advItem.classList.add('swiper-slide');
-  })
-}
-
-const removeSwiperClass = () => {
-  advSwiperContainer.classList.remove('swiper');
-  advList.classList.remove('swiper-wrapper');
-
-  advItems.forEach((advItem) => {
-    advItem.classList.remove('swiper-slide');
-  });
-}
-
 if (window.innerWidth >= 1440) {
-  addSwiperClass();
-  initSwiper();
+  addSwiperClass(advSwiperContainer, advList, advItems);
+  initAdvSwiper();
 }
 
-const breakpointChecker = () => {
-  if (breakpoint.matches) {
-    addSwiperClass();
-    initSwiper();
+const advBreakpointChecker = () => {
+  if (advBreakpoint.matches) {
+    addSwiperClass(advSwiperContainer, advList, advItems);
+    initAdvSwiper();
   } else {
-    removeSwiperClass();
+    removeSwiperClass(advSwiperContainer, advList, advItems);
     advSwiper.destroy();
   }
 };
 
-breakpoint.addEventListener("change", breakpointChecker);
+advBreakpoint.addEventListener("change", advBreakpointChecker);
 
 // GALLERY блок. свайпер. инициализация свайпера происходит только при переключении на десктопную версию
-const gallerySlider = document.querySelector('.gallery__swiper')
+const gallerySlider = document.querySelector('.gallery__swiper');
+const galleryBreakpoint = window.matchMedia("(max-width: 1439px)");
+const gallerySwiperWrapper = document.querySelector('.gallery__swiper-wrapper');
+const gallerySwiperContainer = document.querySelector('.gallery__swiper');
+const gallerySlides = document.querySelectorAll('.gallery__slide');
+let gallerySwiper;
 
-advSwiper = new Swiper(gallerySlider, {
-  slideClass: 'gallery__slide',
-  modules: [Navigation, Grid],
-  navigation: {
-    prevEl: '.gallery__button--prev',
-    nextEl: '.gallery__button--next',
-    clickable: true,
-  },
-  loop: true,
-  allowTouchMove: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 6,
-      grid: {
-        rows: 1,
-        fill: "fill",
+const initGallerySwiper = () => {
+  gallerySwiper = new Swiper(gallerySlider, {
+    slideClass: 'gallery__slide',
+    modules: [Navigation, Grid],
+    navigation: {
+      prevEl: '.gallery__button--prev',
+      nextEl: '.gallery__button--next',
+      clickable: true,
     },
+    loop: true,
+    allowTouchMove: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 6,
+        grid: {
+          rows: 1,
+          fill: "fill",
+        },
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 5,
+        grid: {
+          rows: 1,
+          fill: "fill",
+        },
+      },
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 5,
-      grid: {
-        rows: 1,
-        fill: "fill",
-    },
-    },
-  },
-});
+  });
+};
+
+if (window.innerWidth < 1440) {
+  addSwiperClass(gallerySwiperContainer, gallerySwiperWrapper, gallerySlides);
+  initGallerySwiper();
+}
+
+const galleryBreakpointChecker = () => {
+  if (galleryBreakpoint.matches) {
+    addSwiperClass(gallerySwiperContainer, gallerySwiperWrapper, gallerySlides);
+    initGallerySwiper();
+  } else {
+    removeSwiperClass(gallerySwiperContainer, gallerySwiperWrapper, gallerySlides);
+    gallerySwiper.destroy();
+  }
+};
+
+galleryBreakpoint.addEventListener("change", galleryBreakpointChecker);
