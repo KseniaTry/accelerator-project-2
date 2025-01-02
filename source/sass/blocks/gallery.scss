@@ -3,18 +3,33 @@
     padding: 36px 0px 5px;
   }
 
-  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative;
+    padding: 60px 0px 5px;
+  }
 
   @media (min-width: $desktop-width-min) {}
 
   p {
-    margin: 0 auto;
-
     @media (max-width: $mobile-width-max) {
+      margin: 0 auto;
       margin-bottom: 31px;
       width: $mobile-content-width;
       font-size: 12px;
       line-height: 18px;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin: 0 auto 21px 45px;
+      width: 420px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  br {
+    @media (max-width: $mobile-width-max) {
+      display: none;
     }
   }
 }
@@ -26,23 +41,41 @@
     margin-bottom: 27px;
     width: $mobile-content-width;
   }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 30px;
+    width: $tablet-content-width;
+  }
 }
 
 .gallery__swiper-wrapper .swiper-slide {
   display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 266px;
-}
+  flex-direction: column;
+  justify-content: space-between;
 
-.gallery__slide {
-  width: 158px;
-  height: 266px;
-}
+  @media (max-width: $mobile-width-max) {
+    height: 266px;
+  }
 
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    height: 418px;
+  }
+
+}
 
 .gallery__buttons-container {
+  position: absolute;
+
   @media (max-width: $mobile-width-max) {
     display: none;
   }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    top: 128px;
+    right: 35px;
+  }
+}
+
+.gallery__button--prev {
+  background-color: $extra-color;
 }

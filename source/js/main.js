@@ -244,7 +244,7 @@ advSwiper = new Swiper(gallerySlider, {
     },
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 5,
       grid: {
         rows: 1,
