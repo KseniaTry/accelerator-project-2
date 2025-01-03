@@ -823,7 +823,8 @@
               <source media="(min-width: 768px)" width="253" height="210" type="image/jpg"
                 srcset="img/gallery/slide-5/photo-5-tablet@1x.jpg 1x, img/gallery/slide-5/photo-5-tablet@2x.jpg 2x">
               <img class="gallery__image" src="img/gallery/slide-5/photo-5-mobile@1x.jpg" width="157" height="135"
-                srcset="img/gallery/slide-5/photo-5-mobile@2x.jpg" alt="Фотография участников похода зимой возле подножия горы">
+                srcset="img/gallery/slide-5/photo-5-mobile@2x.jpg"
+                alt="Фотография участников похода зимой возле подножия горы">
             </picture>
 
             <picture>
@@ -870,60 +871,65 @@
     </section>
 
     <section class="consultation" data-test="form">
-      <div class="consultation__form-container">
-        <h2>Остались вопросы?</h2>
-        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
-        <form class="consultation__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="consultation__input" type="tel" id="phone" name="phone" placeholder="Телефон"
-            pattern="[0-9]{11}" required>
-          <label class="consultation__label" for="phone">Телефон</label>
+        <div class="consultation__main-container">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор<br>свяжется<br> с вами для консультации.</p>
+          <form class="consultation__form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="consultation__input" type="tel" id="phone" name="phone" placeholder="Телефон"
+              pattern="[0-9]{11}" required>
+            <label class="consultation__label" for="phone">
+              <span class="visually-hidden">Введите Ваш номер телефона</span>
+            </label>
 
-          <input class="consultation__input" type="email" id="email" name="email" placeholder="Email" required>
-          <label class="consultation__label" for="email">Email</label>
+            <input class="consultation__input" type="email" id="email" name="email" placeholder="Email" required>
+            <label class="consultation__label" for="email">
+              <span class="visually-hidden">Введите Ваш email</span>
+            </label>
 
-          <button class="consultation__form-send button button--primary" type="submit">Отправить</button>
-        </form>
-      </div>
-
-      <section class="consultation-contacts contacts" id="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
-          увлекательными историями и подобрать для вас тур.</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Телефон:</h3>
-            <a class="contacts__item-description" href="tel:+79837454545">+7 983 745-45-45</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Email:</h3>
-            <a class="contacts__item-description" href="mailto:info@lifetour.com">info@lifetour.com</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Адрес:</h3>
-            <address class="contacts__item-description">г. Москва, пр-т Мира, д. 14, офис 101</address>
-          </li>
-        </ul>
-
-        <picture>
-          <source media="(min-width: 1440px)" width="600" height="324" type="image/webp"
-            srcset="img/offers/girl-desktop@1x.webp 1x, img/offers/girl-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" width="768" height="340" type="image/webp"
-            srcset="img/offers/girl-tablet@1x.webp 1x, img/offers/girl-tablet@2x.webp 2x">
-          <source width="320" height="343" type="image/webp"
-            srcset="img/offers/girl-mobile@1x.webp 1x, img/offers/girl-mobile@2x.webp 2x">
-
-          <source media="(min-width: 1440px)" width="600" height="324" type="image/jpg"
-            srcset="img/offers/girl-desktop@1x.jpg 1x, img/offers/girl-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" width="768" height="340" type="image/jpg"
-            srcset="img/offers/girl-tablet@1x.jpg 1x, img/offers/girl-tablet@2x.jpg 2x">
-          <img class="contacts__map-image" src="img/offers/girl-mobile@1x.jpg" width="320" height="343"
-            srcset="img/offers/girl-mobile@2x.jpg" alt="Фотография девушки в спортивной форме">
-        </picture>
-      </section>
+            <button class="consultation__form-send button button--primary" type="submit">Отправить</button>
+          </form>
+        </div>
     </section>
   </main>
 
   <footer class="footer" data-test="footer">
+    <section class="consultation__contacts contacts" id="contacts">
+      <div class="contacts__main-container">
+      <h2 class="contacts__title title" data-title="Контакты">Контакты</h2>
+      <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
+        увлекательными историями и подобрать для вас тур.</p>
+      <ul class="contacts__list">
+        <li class="contacts__item contacts__item--phone">
+          <h3 class="contacts__item-title">Телефон:</h3>
+          <a class="contacts__item-description" href="tel:+79837454545">+7 983 745-45-45</a>
+        </li>
+        <li class="contacts__item contacts__item--mail">
+          <h3 class="contacts__item-title">Email:</h3>
+          <a class="contacts__item-description" href="mailto:info@lifetour.com">info@lifetour.com</a>
+        </li>
+        <li class="contacts__item contacts__item--location">
+          <h3 class="contacts__item-title">Адрес:</h3>
+          <address class="contacts__item-description">г. Москва, пр-т Мира,<br> д. 14, офис 101</address>
+        </li>
+      </ul>
+    </div>
+
+      <picture>
+        <source media="(min-width: 1440px)" width="600" height="324" type="image/webp"
+          srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+        <source media="(min-width: 768px)" width="768" height="340" type="image/webp"
+          srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+        <source width="320" height="343" type="image/webp"
+          srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+
+        <source media="(min-width: 1440px)" width="600" height="324" type="image/png"
+          srcset="img/contacts/map-desktop@1x.png 1x, img/contacts/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="340" type="image/png"
+          srcset="img/contacts/map-tablet@1x.png 1x, img/contacts/map-tablet@2x.png 2x">
+        <img class="contacts__map-image" src="img/contacts/map-mobile@1x.png" width="320" height="343"
+          srcset="img/contacts/map-mobile@2x.png" alt="Карта с отмеченным месторасположением офиса Lifetour">
+      </picture>
+    </section>
     <a class="footer__logo-link" href="index.html">
       <img class="footer__logo-icon" src="img/logo/supergym-logo-mobile.svg" width="142" height="42"
         alt="Логотип LIFETOUR">

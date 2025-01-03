@@ -1,0 +1,85 @@
+.consultation {
+  position: relative;
+
+  @media (max-width: $mobile-width-max) {
+    background-image:
+      image-set(url("../../img/consultation/trees-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/consultation/trees-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/consultation/trees-mobile@1x.jpg") type("image/jpg") 1x,
+        url("../../img/consultation/trees-mobile@2x.jpg") type("image/jpg") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {}
+
+  @media (min-width: $desktop-width-min) {}
+
+  h2 {
+    @media (max-width: $mobile-width-max) {
+      margin: 0;
+      margin-top: 2px;
+      margin-bottom: 19px;
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+
+  p {
+    @media (max-width: $mobile-width-max) {
+      width: 258px;
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      white-space: pre;
+    }
+  }
+
+  br {
+    @media (min-width: $tablet-width-min) {
+      display: none;
+    }
+  }
+}
+
+.consultation__main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 258px;
+  min-height: 638px;
+  color: $basic-light-color;
+}
+
+.consultation__form {}
+
+.consultation__input {
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  border-radius: 2px;
+
+  @media (max-width: $mobile-width-max) {
+    padding: 14px;
+    margin-bottom: 8px;
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(45, 56, 63, 0.5);
+  }
+}
+
+.consultation__label {}
+
+.consultation__form-send {
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    margin-top: 1px;
+  }
+}
+
+.consultation__contacts {}
