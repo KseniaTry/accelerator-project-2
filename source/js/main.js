@@ -37,7 +37,7 @@ new Swiper(heroSlider, {
     bulletActiveClass: 'swiper-pagination-bullet-active hero__bullet--active',
   },
   breakpoints: {
-    1400: {
+    1440: {
       allowTouchMove: false,
       pagination: {
         clickable: true,
