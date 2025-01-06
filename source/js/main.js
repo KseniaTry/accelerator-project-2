@@ -258,4 +258,19 @@ const galleryBreakpointChecker = () => {
   }
 };
 
-galleryBreakpoint.addEventListener("change", galleryBreakpointChecker);
+galleryBreakpoint.addEventListener('change', galleryBreakpointChecker);
+
+//
+// const footerNav = document.querySelector('.footer__navigation-list');
+// const footerNavItems = footerNav.querySelectorAll('.navigation__item');
+// const initialNavRowsCount = 3;
+// let currentNavItemsCount = 6;
+
+// console.log(footerNavItems.length)
+// console.log(currentNavItemsCount)
+
+// if ((footerNavItems.length - currentNavItemsCount <= 2) && (footerNavItems.length - currentNavItemsCount != 0)) {
+//   footerNav.style.gridTemplateRows = `repeat(${initialNavRowsCount + 1}, 1fr)`;
+//   currentNavItemsCount = footerNavItems.length;
+//   console.log('f');
+// }

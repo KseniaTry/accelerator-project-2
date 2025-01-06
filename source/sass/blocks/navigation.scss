@@ -32,25 +32,10 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 26px;
-  background-color: $extra-color;
   z-index: 2;
 
-  @media (max-width: $mobile-width-max) {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-
-  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    padding-top: 50px;
-    padding-bottom: 70px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
+  @media (max-width: $tablet-width-max) {
+    display: none;
   }
 }
 
@@ -66,5 +51,5 @@
 
 .navigation__link {
   text-decoration: none;
-  color: $basic-light-color;
+  color: inherit; // наследуется цвет который задан блоку navigation (в footer и header задаем нцжный цвет)
 }
