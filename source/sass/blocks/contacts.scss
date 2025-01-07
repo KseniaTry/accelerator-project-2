@@ -7,6 +7,14 @@
     padding: 20px 0px 40px;
   }
 
+  @media (min-width: $desktop-width-min) {
+    display: flex;
+    align-items: center;
+    width: $desktop-content-width;
+    margin: 0 auto;
+    margin-bottom: 95px;
+  }
+
   p {
     @media (max-width: $mobile-width-max) {
       margin-bottom: 30px;
@@ -14,11 +22,16 @@
       line-height: 20px;
     }
 
-    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    @media (min-width: $tablet-width-min) {
       width: 480px;
       margin-bottom: 40px;
       font-size: 16px;
       line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      width: 500px;
+      margin-bottom: 50px;
     }
   }
 }
@@ -33,6 +46,11 @@
     margin: 0px 43px 40px 45px;
     width: 680px;
   }
+
+  @media (min-width: $desktop-width-min) {
+    width: 600px;
+    margin-top: 19px;
+  }
 }
 
 .contacts__title {
@@ -42,6 +60,10 @@
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 26px;
   }
 }
 
@@ -61,12 +83,17 @@
   position: relative;
 
   @media (max-width: $mobile-width-max) {
-  margin-left: 32px;
-  margin-bottom: 30px;
+    margin-left: 32px;
+    margin-bottom: 30px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     margin-left: 34px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-left: 56px;
+    margin-bottom: 35px;
   }
 
   &::before {
@@ -82,13 +109,18 @@
     @media (max-width: $mobile-width-max) {
       width: 22px;
       height: 22px;
-      }
+    }
 
-      @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-        width: 24px;
-        height: 24px;
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      width: 26px;
+      height: 26px;
+    }
   }
-}
 }
 
 .contacts__item--phone::before {
@@ -123,6 +155,12 @@
     font-size: 16px;
     line-height: 16px;
   }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .contacts__item-description {
@@ -139,6 +177,11 @@
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   br {
