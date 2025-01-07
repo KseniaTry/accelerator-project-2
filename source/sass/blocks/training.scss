@@ -7,26 +7,26 @@
     position: relative;
     padding: 60px 45px 40px;
     background-image:
-    image-set(url("../../img/training/background/training-clouds-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/training/background/training-clouds-tablet@2x.webp") type("image/webp") 2x,
-      url("../../img/training/background/training-clouds-tablet@1x.png") type("image/png") 1x,
-      url("../../img/training/background/training-clouds-tablet@2x.png") type("image/png") 2x);
-      background-repeat: no-repeat;
-      background-size: 73%;
-      background-position: bottom 119px left 249px;
+      image-set(url("../../img/training/background/training-clouds-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/training/background/training-clouds-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/training/background/training-clouds-tablet@1x.png") type("image/png") 1x,
+        url("../../img/training/background/training-clouds-tablet@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: 73%;
+    background-position: bottom 119px left 249px;
   }
 
   @media (min-width: $desktop-width-min) {
     position: relative;
     padding: 59px 120px 40px;
     background-image:
-    image-set(url("../../img/training/background/training-clouds-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/training/background/training-clouds-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/training/background/training-clouds-desktop@1x.png") type("image/png") 1x,
-      url("../../img/training/background/training-clouds-desktop@2x.png") type("image/png") 2x);
-      background-repeat: no-repeat;
-      background-size: 45%;
-      background-position: bottom -33px left 796px;
+      image-set(url("../../img/training/background/training-clouds-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/training/background/training-clouds-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/training/background/training-clouds-desktop@1x.png") type("image/png") 1x,
+        url("../../img/training/background/training-clouds-desktop@2x.png") type("image/png") 2x);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: bottom -33px left 796px;
   }
 }
 
@@ -201,26 +201,13 @@
 
 .training__vk-icon {
   justify-self: flex-end;
-  position: relative;
-  display: block;
   width: 24px;
   height: 24px;
-  border: 1px solid rgba(45, 56, 63, 0.3);
-}
 
-.training__vk-icon::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 23px;
-  height: 23px;
-  background-color: $basic-dark-color;
-  mask-image: url("../../__spritemap#sprite-vk-view");
-  mask-size: 14px 8px;
-  mask-position: 50% 50%;
-  mask-repeat: no-repeat;
+  &::before {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .training__buttons-container {

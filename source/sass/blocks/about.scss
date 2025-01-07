@@ -17,7 +17,6 @@
   }
 }
 
-
 .about__image {
   @media (max-width: $mobile-width-max) {
     margin-bottom: 11px;
@@ -40,7 +39,8 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    align-self: flex-start;;
+    align-self: flex-start;
+    ;
     margin: 0;
     width: 585px;
   }
@@ -149,6 +149,12 @@
   p:last-child {
     @media (max-width: $tablet-width-max) {
       margin-bottom: 0;
+    }
+  }
+
+  br {
+    @media (max-width: $tablet-width-max) {
+      display: none;
     }
   }
 }

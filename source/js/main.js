@@ -1,4 +1,3 @@
-// https://swiperjs.com/get-started#installation
 import Swiper from "swiper";
 import { Navigation, Pagination, Grid } from "swiper/modules";
 import 'swiper/css';
@@ -25,7 +24,7 @@ const heroSlider = document.querySelector('.hero__swiper');
 
 new Swiper(heroSlider, {
   slideClass: 'hero__slide',
-  modules: [Navigation, Pagination],
+  modules: [Pagination],
   slidesPerView: 'auto',
   loop: true,
   allowTouchMove: true,
@@ -51,8 +50,7 @@ const toursSlider = document.querySelector('.tours__swiper');
 
 new Swiper(toursSlider, {
   slideClass: 'tours__slide',
-  modules: [Navigation, Pagination],
-  loop: true, // слайдер зациклен
+  modules: [Navigation],
   navigation: {
     prevEl: '.tours__button--prev',
     nextEl: '.tours__button--next',
@@ -81,8 +79,7 @@ const trainingSlider = document.querySelector('.training__swiper');
 
 new Swiper(trainingSlider, {
   slideClass: 'training__slide',
-  modules: [Navigation, Pagination],
-  loop: true, // слайдер зациклен
+  modules: [Navigation],
   navigation: {
     prevEl: '.training__button--prev',
     nextEl: '.training__button--next',
@@ -114,8 +111,7 @@ const reviewsSlider = document.querySelector('.reviews__swiper');
 
 new Swiper(reviewsSlider, {
   slideClass: 'reviews__slide',
-  modules: [Navigation, Pagination],
-  loop: true, // слайдер зациклен
+  modules: [Navigation],
   navigation: {
     prevEl: '.reviews__button--prev',
     nextEl: '.reviews__button--next',
@@ -152,7 +148,7 @@ let advSwiper;
 const initAdvSwiper = () => {
   advSwiper = new Swiper(advSlider, {
     slideClass: 'advantages__item',
-    modules: [Navigation, Pagination],
+    modules: [Navigation],
     navigation: {
       prevEl: '.advantages__button--prev',
       nextEl: '.advantages__button--next',
@@ -259,18 +255,3 @@ const galleryBreakpointChecker = () => {
 };
 
 galleryBreakpoint.addEventListener('change', galleryBreakpointChecker);
-
-//
-// const footerNav = document.querySelector('.footer__navigation-list');
-// const footerNavItems = footerNav.querySelectorAll('.navigation__item');
-// const initialNavRowsCount = 3;
-// let currentNavItemsCount = 6;
-
-// console.log(footerNavItems.length)
-// console.log(currentNavItemsCount)
-
-// if ((footerNavItems.length - currentNavItemsCount <= 2) && (footerNavItems.length - currentNavItemsCount != 0)) {
-//   footerNav.style.gridTemplateRows = `repeat(${initialNavRowsCount + 1}, 1fr)`;
-//   currentNavItemsCount = footerNavItems.length;
-//   console.log('f');
-// }

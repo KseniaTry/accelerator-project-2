@@ -14,4 +14,28 @@
   color: $basic-light-color;
   background-color: $extra-color;
   border: 1px solid $extra-color;
+
+  &:hover {
+    background-color: $basic-light-color;
+    border: 1px solid #1c3374;
+    color: #1c3374;
+  }
+
+  &:focus {
+    background-color: $basic-light-color;
+    border: 1px solid $basic-light-color;
+    color: #1c3374;
+  }
+
+  &:active {
+    background-color: #1c3374;
+    border: 1px solid #1c3374;
+  }
+
+  &:disabled,
+  &-disabled {
+    background-color: #999999;
+    border: 1px solid #999999;
+    color: $basic-light-color;
+  }
 }
