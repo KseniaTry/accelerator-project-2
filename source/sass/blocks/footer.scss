@@ -61,6 +61,11 @@
 
 .footer__logo-link {
   line-height: 100%;
+
+  @media (min-width: $desktop-width-min) {
+    width: 200px;
+    text-align: center;
+  }
 }
 
 .footer__logo-icon {
@@ -100,9 +105,11 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 800px;
+    width: 766px; // 800
+    min-height: 60px;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 21px; // 10
   }
 
 }
@@ -131,6 +138,8 @@
 }
 
 .footer__phone-link {
+  width: 189px;
+  text-align: right;
   text-decoration: none;
   color: $basic-dark-color;
   font-size: 18px;
