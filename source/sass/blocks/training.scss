@@ -18,7 +18,7 @@
 
   @media (min-width: $desktop-width-min) {
     position: relative;
-    padding: 59px 120px 40px;
+    padding: 59px 120px 62px;
     background-image:
       image-set(url("../../img/training/background/training-clouds-desktop@1x.webp") type("image/webp") 1x,
         url("../../img/training/background/training-clouds-desktop@2x.webp") type("image/webp") 2x,
@@ -92,7 +92,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -139,7 +139,7 @@
   grid-template-rows: 200px min-content min-content;
   row-gap: 15px;
   column-gap: 10px;
-  padding: 15px;
+  padding: 14px;
   border: 1px solid #0266C11A;
 
   @media (max-width: $mobile-width-max) {
@@ -218,7 +218,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: 193px;
+    top: 201px;
     right: 35px;
   }
 
@@ -230,25 +230,24 @@
 
 .training__process-title {
   margin: 0;
-  margin-bottom: 25px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-size: 16px;
     line-height: 16px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 104px;
+    margin-bottom: 102px;
     font-size: 18px;
     line-height: 18px;
   }
 
   @media (min-width: $desktop-width-min) {
-    margin-bottom: 31px; // 23
+    margin-bottom: 31px;
     font-size: 21px;
     line-height: 21px;
   }
@@ -338,7 +337,7 @@
     background-color: $extra-color;
 
     @media (max-width: $mobile-width-max) {
-      top: 9px;
+      top: 10px;
       left: -63px;
     }
 

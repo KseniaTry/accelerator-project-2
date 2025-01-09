@@ -4,7 +4,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    padding: 40px 48px 40px 0;
+    padding: 40px 48px 43px 0;
     display: flex;
     align-items: center;
   }
@@ -40,7 +40,6 @@
 
   @media (min-width: $desktop-width-min) {
     align-self: flex-start;
-    ;
     margin: 0;
     width: 585px;
   }

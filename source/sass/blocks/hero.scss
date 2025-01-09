@@ -230,6 +230,19 @@
     width: 18px;
     height: 18px;
   }
+
+  &:hover {
+    background-color: #d9d9d9;
+  }
+
+  &:focus {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -249,4 +262,5 @@
 
 .hero__swiper .hero__bullet--active {
   background-color: $basic-light-color;
+  border: 1px solid $basic-light-color;
 }

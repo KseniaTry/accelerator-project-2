@@ -369,17 +369,50 @@
     font-size: 16px;
     line-height: 16px;
   }
-}
 
-.tours__show-all::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 13px;
-  width: 9px;
-  height: 16px;
-  mask-image: url("/__spritemap#sprite-right-arrow-view");
-  mask-repeat: no-repeat;
-  background-color: $basic-dark-color;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    width: 9px;
+    height: 16px;
+    mask-image: url("/__spritemap#sprite-right-arrow-view");
+    mask-repeat: no-repeat;
+    background-color: $basic-dark-color;
+  }
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+
+    &::after {
+      background-color: rgba(2, 102, 193, 0.1);
+    }
+  }
+
+  &:focus {
+    color: rgba(2, 102, 193, 1);
+
+    &::after {
+      background-color: rgba(2, 102, 193, 1);
+    }
+  }
+
+  &:active {
+    color: rgba(28, 51, 116, 1);
+
+    &::after {
+      background-color: rgba(28, 51, 116, 1);
+    }
+  }
+
+  &:disabled,
+  &-disabled {
+    color: rgba(153, 153, 153, 1);
+  }
+
+  &::after {
+    background-color: rgba(153, 153, 153, 1);
+  }
 }

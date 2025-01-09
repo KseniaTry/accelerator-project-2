@@ -3,7 +3,6 @@ import { Navigation, Pagination, Grid } from "swiper/modules";
 import 'swiper/css';
 import { addSwiperClass, removeSwiperClass } from "./util";
 
-
 // header меню
 const headerNavigation = document.querySelector('.header__navigation');
 const headerButton = document.querySelector('.header__toggle');
@@ -104,7 +103,6 @@ new Swiper(trainingSlider, {
     },
   }
 });
-
 
 // REVIEWS swiper slider
 const reviewsSlider = document.querySelector('.reviews__swiper');

@@ -1,11 +1,11 @@
 .gallery {
   @media (max-width: $mobile-width-max) {
-    padding: 36px 0px 5px;
+    padding: 36px 0px 3px; // 5
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     position: relative;
-    padding: 60px 0px 5px;
+    padding: 60px 0px 3px;
   }
 
   @media (min-width: $desktop-width-min) {

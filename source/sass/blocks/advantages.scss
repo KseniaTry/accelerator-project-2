@@ -1,6 +1,6 @@
 .advantages {
   @media (max-width: $mobile-width-max) {
-    padding: 36px 15px 20px;
+    padding: 36px 15px 18px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width-min) {
     position: relative;
-    padding: 135px 0 185px;
+    padding: 135px 0 183px;
   }
 }
 

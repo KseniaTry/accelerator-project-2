@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width-min) {
     position: relative;
-    padding: 145px 0 77px;
+    padding: 145px 0 71px; // 77
   }
 }
 
@@ -178,7 +178,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: 40px;
+    top: 42px;
     right: 35px;
   }
 
