@@ -253,3 +253,21 @@ const galleryBreakpointChecker = () => {
 };
 
 galleryBreakpoint.addEventListener('change', galleryBreakpointChecker);
+
+// form
+const consultationForm = document.querySelector('.consultation__form');
+const consultationInputs = consultationForm.querySelectorAll('.consultation__input');
+
+// исчезновение label если данные в поле введены и поле не в фокусе
+consultationInputs.forEach((input) => {
+  input.addEventListener('change', (evt) => {
+    let label = document.querySelector(`[for="${evt.target.id}"]`);
+    if (input.value !== '') {
+      label.style.color = 'transparent';
+    } else {
+      label.style.color = 'rgba(45, 56, 63, 0.5)';
+    }
+  })
+});
+
+
