@@ -270,4 +270,50 @@ consultationInputs.forEach((input) => {
   })
 });
 
+const BASE_URL = 'https://echo.htmlacademy.ru/';
+
+const sendData = (onSuccess, body) => {
+  fetch(
+    BASE_URL,
+    {
+      method: 'POST',
+      body
+    },
+  ).then((response) => {
+    if (response.ok) {
+      onSuccess();
+    } else {
+      throw new Error();
+    }
+  })
+    .catch(() => {
+      throw new Error();
+    });
+};
+
+// очистка формы после отправки данных на сервер
+const setUploadFormSubmit = (onSuccess) => {
+  consultationForm.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+
+    sendData(
+      () => {
+        onSuccess();
+      },
+      new FormData(evt.target),
+    );
+  })
+};
+
+const resetFormData = () => {
+  consultationForm.reset();
+
+  consultationInputs.forEach((input) => {
+    let label = document.querySelector(`[for="${input.id}"]`);
+    label.style.color = 'rgba(45, 56, 63, 0.5)';
+  })
+};
+
+setUploadFormSubmit(resetFormData);
+
 

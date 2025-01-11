@@ -4,13 +4,11 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    position: relative;
-    padding: 60px 0 20px;
+    padding: 60px 0 30px;
   }
 
   @media (min-width: $desktop-width-min) {
-    position: relative;
-    padding: 145px 0 71px; // 77
+    padding: 145px 0 71px;
   }
 }
 
@@ -21,12 +19,13 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin: 0;
-    margin-left: 45px;
-    width: 723px;
+    position: relative;
+    margin: 0 auto;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width-min) {
+    position: relative;
     margin: 0;
     margin-left: 130px;
     width: 1310px;
@@ -42,7 +41,8 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+    margin-left: 45px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -63,6 +63,14 @@
   @media (min-width: $desktop-width-min) {
     min-height: calc(293px + 20px);
   }
+}
+
+.reviews__swiper-wrapper {
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    padding: 10px 0px 10px 45px;
+  }
+
+
 }
 
 .reviews__swiper .swiper-slide {
@@ -178,12 +186,12 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: 42px;
+    top: -18px;
     right: 35px;
   }
 
   @media (min-width: $desktop-width-min) {
-    top: 128px;
+    top: -17px;
     right: 110px;
   }
 }

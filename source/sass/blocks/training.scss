@@ -4,7 +4,6 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    position: relative;
     padding: 60px 45px 40px;
     background-image:
       image-set(url("../../img/training/background/training-clouds-tablet@1x.webp") type("image/webp") 1x,
@@ -17,7 +16,6 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    position: relative;
     padding: 59px 120px 62px;
     background-image:
       image-set(url("../../img/training/background/training-clouds-desktop@1x.webp") type("image/webp") 1x,
@@ -38,10 +36,12 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative;
     width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width-min) {
+    position: relative;
     width: $desktop-content-width;
   }
 
@@ -218,13 +218,13 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: 201px;
-    right: 35px;
+    top: 140px;
+    right: -10px;
   }
 
   @media (min-width: $desktop-width-min) {
-    top: 217px;
-    right: 110px;
+    top: 159px;
+    right: -10px;
   }
 }
 

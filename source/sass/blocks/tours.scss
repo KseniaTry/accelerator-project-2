@@ -8,12 +8,10 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    position: relative; // для кнопок слайдера
     padding: 60px 45px 40px;
   }
 
   @media (min-width: $desktop-width-min) {
-    position: relative; // для кнопок слайдера
     padding: 122px 120px 100px;
   }
 }
@@ -27,10 +25,12 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative; // для кнопок слайдера
     width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width-min) {
+    position: relative; // для кнопок слайдера
     width: $desktop-content-width;
   }
 }
@@ -335,13 +335,16 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: 42px;
-    right: 35px;
+    top: -17px;
+    right: -10px;
   }
 
   @media (min-width: $desktop-width-min) {
-    top: 102px;
-    right: 110px;
+    // top: 102px;
+    // right: 110px;
+
+    top: -21px;
+    right: -10px;
   }
 }
 

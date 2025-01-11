@@ -1,6 +1,5 @@
 .header {
   background-color: $extra-color;
-  position: relative; // для кнопки меню и самого выпадающего меню
 
   @media (max-width: $mobile-width-max) {
     padding: 15px;
@@ -17,6 +16,7 @@
 
 .header__main-container {
   margin: 0 auto;
+  position: relative; // для кнопки меню и самого выпадающего меню
 
   @media (max-width: $mobile-width-max) {
     width: $mobile-content-width;
@@ -61,6 +61,7 @@
 
 .header__toggle {
   position: absolute;
+  left: 0px;
   width: 17px;
   height: 2px;
   background-color: $basic-light-color;
@@ -87,13 +88,11 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    top: 27px;
-    left: 15px;
+    top: 12px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: 40px;
-    left: 45px;
+    top: 20px;
   }
 
   @media (min-width: $desktop-width-min) {

@@ -1,15 +1,18 @@
 .contacts {
+  display: flex;
+  align-items: center;
+
   @media (max-width: $mobile-width-max) {
     padding: 16px 0px 20px;
+    flex-direction: column;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     padding: 20px 0px 39px;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width-min) {
-    display: flex;
-    align-items: center;
     width: $desktop-content-width;
     margin: 0 auto;
     margin-bottom: 94px;
