@@ -1,10 +1,10 @@
 .advantages {
   @media (max-width: $mobile-width-max) {
-    padding: 36px 15px 18px;
+    padding: 36px 0px 18px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    padding: 60px 45px 40px;
+    padding: 60px 0px 40px;
     background-image:
       image-set(url("../../img/adv/background/adv-clouds-tablet@1x.webp") type("image/webp") 1x,
         url("../../img/adv/background/adv-clouds-tablet@2x.webp") type("image/webp") 2x,
@@ -25,7 +25,17 @@
   margin: 0 auto;
 
   @media (max-width: $mobile-width-max) {
-    width: $mobile-content-width;
+    padding: 0 15px;
+    width: 320px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    padding: 0 45px;
+    width: $tablet-width-min;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: $desktop-width-min;
   }
 }
 

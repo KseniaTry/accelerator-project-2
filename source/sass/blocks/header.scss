@@ -20,14 +20,25 @@
 
   @media (max-width: $mobile-width-max) {
     width: $mobile-content-width;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: $tablet-content-width;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
   }
 
   @media (min-width: $desktop-width-min) {
     width: $desktop-content-width;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -49,10 +60,6 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateX(25px);
     font-weight: 400;
     font-size: 16px;
     font-size: 16px;
@@ -128,10 +135,11 @@
     }
 
     @media (min-width: $desktop-width-min) {
+      margin-left: 15px;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 19px;
+      gap: 16px;
     }
 }
 
@@ -249,6 +257,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-top: 2px;
     font-size: 16px;
     line-height: 16px;
   }
