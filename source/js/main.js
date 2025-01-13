@@ -6,15 +6,20 @@ import { addSwiperClass, removeSwiperClass } from "./util";
 // header меню
 const headerNavigation = document.querySelector('.header__navigation');
 const headerButton = document.querySelector('.header__toggle');
-const navigationItems = document.querySelectorAll('.navigation__item');
+const navigationItems = document.querySelectorAll('.header__navigation-item');
+const pageBody = document.querySelector('.page-body');
 
 headerButton.addEventListener('click', () => {
   headerNavigation.classList.toggle('header__navigation--opened');
+  headerButton.classList.toggle('header__toggle--opened');
+  pageBody.classList.toggle('page-body--navigation-opened');
 })
 
 navigationItems.forEach((navigationItem) => {
   navigationItem.addEventListener('click', () => {
     headerNavigation.classList.remove('header__navigation--opened');
+    headerButton.classList.remove('header__toggle--opened');
+    pageBody.classList.remove('page-body--navigation-opened');
   })
 })
 
