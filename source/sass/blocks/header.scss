@@ -78,6 +78,7 @@
   height: 2px;
   background-color: $basic-light-color;
   border: none;
+  cursor: pointer;
 
   &::after,
   &::before {

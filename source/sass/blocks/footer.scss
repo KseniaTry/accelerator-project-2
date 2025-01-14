@@ -38,24 +38,24 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0 auto;
 
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
     gap: 20px;
+    width: $mobile-content-width;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin: 0 auto;
-    width: $tablet-content-width;
-    gap: 34px;
     justify-content: center;
+    gap: 34px;
+    width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 0 auto;
     justify-content: center;
-    width: $desktop-content-width;
     gap: 22px;
+    width: $desktop-content-width;
   }
 }
 
@@ -102,6 +102,7 @@
   @media (min-width: $tablet-width-min) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
   }
 
@@ -109,7 +110,6 @@
     width: 766px;
     min-height: 60px;
     align-items: center;
-    justify-content: center;
     gap: 25px;
   }
 }

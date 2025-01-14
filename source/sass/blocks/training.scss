@@ -141,12 +141,14 @@
   column-gap: 10px;
   padding: 14px;
   border: 1px solid #0266C11A;
+  overflow-y: scroll;
 
   @media (max-width: $mobile-width-max) {
     height: 356px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    grid-template-columns: 147px 24px;
     width: 212px;
     height: 388px;
   }
@@ -158,10 +160,21 @@
 
   h4 {
     margin: 0;
-    width: min-content;
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
+
+    @media (max-width: $mobile-width-max) {
+      width: min-content;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      word-break: break-word;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      width: min-content;
+    }
   }
 
   p {
@@ -267,7 +280,7 @@
 
     @media (max-width: $mobile-width-max) {
       width: 2px;
-      height: 183px;
+      height: 85%;
       top: 17px;
       left: 6px;
     }

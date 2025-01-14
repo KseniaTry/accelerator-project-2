@@ -46,6 +46,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: scroll;
 
   @media (max-width: $mobile-width-max) {
     width: $mobile-content-width;
@@ -56,14 +57,14 @@
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: $tablet-content-width;
-    min-height: 390px;
+    height: 390px;
     margin: 242px 45px 402px;
     justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width-min) {
     width: 944px;
-    min-height: 342px;
+    height: 343px;
     margin: 200px 120px 132px;
     align-items: flex-start;
   }
@@ -96,13 +97,13 @@
     margin: 0;
 
     @media (max-width: $mobile-width-max) {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       font-size: 15px;
       line-height: 20px;
     }
 
     @media (min-width: $tablet-width-min) {
-      margin-bottom: 35px;
+      margin-bottom: 25px;
       width: 500px;
       font-size: 17px;
       line-height: 24px;
@@ -164,7 +165,7 @@
   width: 180px;
 
   @media (max-width: $tablet-width-max) {
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
   }
 }
 

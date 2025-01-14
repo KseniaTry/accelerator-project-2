@@ -109,6 +109,7 @@
   padding: 20px;
   box-shadow: 0 0 10px 0 rgba(28, 51, 116, 0.1);
   background-color: $basic-light-color;
+  overflow: auto;
 
   @media (max-width: $mobile-width-max) {
     width: 290px;
@@ -141,7 +142,7 @@
   }
 
   p+p {
-    margin-bottom: 0px;
+    // margin-bottom: 0px;
   }
 
   p:first-child {
@@ -153,16 +154,19 @@
   p:last-child {
     margin-bottom: 0;
   }
+
+  h3+p {
+    line-height: 12px;
+  }
 }
 
 .reviews__image {
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 }
 
 .reviews__text-container {
-  overflow: scroll;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -177,8 +181,8 @@
   font-weight: 700;
 
   @media (max-width: $mobile-width-max) {
-    margin-top: 16px;
-    margin-bottom: 5px;
+    margin-top: 6px; //16
+    margin-bottom: 8px;
     font-size: 12px;
     line-height: 12px;
   }
