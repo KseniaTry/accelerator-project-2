@@ -1,4 +1,6 @@
 .page-main {
+  position: relative; // для оверлея
+
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     background-image:
       image-set(url("../../img/tours/clouds/clouds-tablet@1x.webp") type("image/webp") 1x,

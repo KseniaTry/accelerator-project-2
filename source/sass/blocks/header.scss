@@ -1,5 +1,7 @@
 .header {
+  position: relative;
   background-color: $extra-color;
+  z-index: 10;
 
   @media (max-width: $mobile-width-max) {
     padding: 15px;
@@ -44,6 +46,7 @@
 .header__navigation {
   font-weight: 700;
   background-color: $extra-color;
+  z-index: 4;
 
   @media (max-width: $mobile-width-max) {
     font-size: 14px;
