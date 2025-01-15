@@ -120,14 +120,14 @@
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     padding: 102px 19px 30px;
     width: 324px;
-    min-height: 340px;
+    height: 340px;
   }
 
   @media (min-width: $desktop-width-min) {
     padding: 123px 19px 40px;
     width: 380px;
     height: 330px;
-    overflow: scroll;
+      overflow: scroll;
   }
 
   &::before {
