@@ -1,4 +1,6 @@
 .footer {
+  position: relative; // для оверлея
+
   @media (max-width: $mobile-width-max) {
     padding: 20px 0px;
   }
