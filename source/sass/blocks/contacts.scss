@@ -3,12 +3,12 @@
   align-items: center;
 
   @media (max-width: $mobile-width-max) {
-    padding: 16px 0px 20px;
+    padding: 16px 0 20px;
     flex-direction: column;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    padding: 20px 0px 39px;
+    padding: 20px 0 39px;
     flex-direction: column;
   }
 
@@ -41,12 +41,12 @@
 
 .contacts__main-container {
   @media (max-width: $mobile-width-max) {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 30px;
     width: $mobile-content-width;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin: 0px 43px 40px 45px;
+    margin: 0 43px 40px 45px;
     width: 680px;
   }
 

@@ -4,9 +4,9 @@
   @media (max-width: $mobile-width-max) {
     background-image:
       image-set(url("../../img/consultation/trees-mobile@1x.webp") type("image/webp") 1x,
-        url("../../img/consultation/trees-mobile@2x.webp") type("image/webp") 2x,
-        url("../../img/consultation/trees-mobile@1x.jpg") type("image/jpg") 1x,
-        url("../../img/consultation/trees-mobile@2x.jpg") type("image/jpg") 2x);
+      url("../../img/consultation/trees-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/consultation/trees-mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../img/consultation/trees-mobile@2x.jpg") type("image/jpg") 2x);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -14,9 +14,9 @@
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     background-image:
       image-set(url("../../img/consultation/trees-tablet@1x.webp") type("image/webp") 1x,
-        url("../../img/consultation/trees-tablet@2x.webp") type("image/webp") 2x,
-        url("../../img/consultation/trees-tablet@1x.jpg") type("image/jpg") 1x,
-        url("../../img/consultation/trees-tablet@2x.jpg") type("image/jpg") 2x);
+      url("../../img/consultation/trees-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/consultation/trees-tablet@1x.jpg") type("image/jpg") 1x,
+      url("../../img/consultation/trees-tablet@2x.jpg") type("image/jpg") 2x);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -24,24 +24,25 @@
   @media (min-width: $desktop-width-min) {
     background-image:
       image-set(url("../../img/consultation/trees-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/consultation/trees-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/consultation/trees-desktop@1x.jpg") type("image/jpg") 1x,
-        url("../../img/consultation/trees-desktop@2x.jpg") type("image/jpg") 2x);
+      url("../../img/consultation/trees-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/consultation/trees-desktop@1x.jpg") type("image/jpg") 1x,
+      url("../../img/consultation/trees-desktop@2x.jpg") type("image/jpg") 2x);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   h2 {
     font-weight: 800;
+    text-align: center;
 
     @media (max-width: $mobile-width-max) {
-      margin: 2px 0px 19px 0px;
+      margin: 2px 0 19px;
       font-size: 22px;
       line-height: 22px;
     }
 
     @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-      margin: 5px 0px 20px 0px;
+      margin: 5px 0 20px;
       font-size: 25px;
       line-height: 25px;
     }
@@ -63,7 +64,7 @@
       margin-bottom: 20px;
       font-size: 12px;
       line-height: 18px;
-      white-space: pre;
+      white-space: break-spaces;
     }
 
     @media (min-width: $tablet-width-min) {
@@ -159,15 +160,7 @@
     padding: 17px 30px;
   }
 
-  &::-webkit-input-placeholder {
-    color: transparent;
-  }
-
-  &::-moz-placeholder {
-    color: transparent;
-  }
-
-  &::-moz-placeholder {
+  &::placeholder {
     color: transparent;
   }
 
@@ -192,7 +185,7 @@
   }
 }
 
-.consultation__input:focus+.consultation__label {
+.consultation__input:focus + .consultation__label {
   color: transparent;
 }
 

@@ -4,8 +4,8 @@ const addSwiperClass = (swiperClass, swiperWrapperClass, swiperSlideClass) => {
 
   swiperSlideClass.forEach((slide) => {
     slide.classList.add('swiper-slide');
-  })
-}
+  });
+};
 
 const removeSwiperClass = (swiperClass, swiperWrapperClass, swiperSlideClass) => {
   swiperClass.classList.remove('swiper');
@@ -14,6 +14,6 @@ const removeSwiperClass = (swiperClass, swiperWrapperClass, swiperSlideClass) =>
   swiperSlideClass.forEach((slide) => {
     slide.classList.remove('swiper-slide');
   });
-}
+};
 
-export {addSwiperClass, removeSwiperClass}
+export {addSwiperClass, removeSwiperClass};

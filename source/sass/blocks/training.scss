@@ -7,9 +7,9 @@
     padding: 60px 45px 40px;
     background-image:
       image-set(url("../../img/training/background/training-clouds-tablet@1x.webp") type("image/webp") 1x,
-        url("../../img/training/background/training-clouds-tablet@2x.webp") type("image/webp") 2x,
-        url("../../img/training/background/training-clouds-tablet@1x.png") type("image/png") 1x,
-        url("../../img/training/background/training-clouds-tablet@2x.png") type("image/png") 2x);
+      url("../../img/training/background/training-clouds-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/training/background/training-clouds-tablet@1x.png") type("image/png") 1x,
+      url("../../img/training/background/training-clouds-tablet@2x.png") type("image/png") 2x);
     background-repeat: no-repeat;
     background-size: 73%;
     background-position: bottom 119px left 249px;
@@ -19,9 +19,9 @@
     padding: 59px 120px 62px;
     background-image:
       image-set(url("../../img/training/background/training-clouds-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/training/background/training-clouds-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/training/background/training-clouds-desktop@1x.png") type("image/png") 1x,
-        url("../../img/training/background/training-clouds-desktop@2x.png") type("image/png") 2x);
+      url("../../img/training/background/training-clouds-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/training/background/training-clouds-desktop@1x.png") type("image/png") 1x,
+      url("../../img/training/background/training-clouds-desktop@2x.png") type("image/png") 2x);
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: bottom -33px left 796px;
@@ -92,12 +92,14 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 500px;
     margin-bottom: 36px;
     font-size: 25px;
     line-height: 25px;
   }
 
   @media (min-width: $desktop-width-min) {
+    width: 1000px;
     margin-bottom: 16px;
     font-size: 35px;
     line-height: 35px;
@@ -140,7 +142,7 @@
   row-gap: 15px;
   column-gap: 10px;
   padding: 14px;
-  border: 1px solid #0266C11A;
+  border: 1px solid rgba(2, 102, 193, 0.1);
   overflow-y: scroll;
 
   @media (max-width: $mobile-width-max) {
@@ -212,14 +214,55 @@
   }
 }
 
-.training__vk-icon {
+.training__vk-link {
   justify-self: flex-end;
+  position: relative;
+  display: block;
   width: 24px;
   height: 24px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
 
   &::before {
+    content: "";
+    display: block;
+    position: absolute;
     width: 23px;
     height: 23px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $basic-dark-color;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-size: 14px 8px;
+  }
+
+  &:hover {
+    border: 1px solid $basic-dark-color;
+  }
+
+  &:focus {
+    border: 1px solid $basic-light-color;
+  }
+
+  &:active {
+    background-color: $extra-color;
+    border: 1px solid $extra-color;
+  }
+
+  &:active::before {
+    background-color: $basic-light-color;
+  }
+
+  &:disabled,
+  &-disabled {
+    border: 1px solid rgba(45, 56, 63, 0.3);
+  }
+
+  &:disabled::before,
+  &-disabled::before {
+    background-color: rgba(45, 56, 63, 0.3);
   }
 }
 

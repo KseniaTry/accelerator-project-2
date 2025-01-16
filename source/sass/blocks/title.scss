@@ -1,25 +1,25 @@
 .title {
-    position: relative;
-    margin: 0;
-    font-weight: 800;
-    text-align: start;
-    z-index: 1;
+  position: relative;
+  margin: 0;
+  font-weight: 800;
+  text-align: start;
+  z-index: 1;
 
-    @media (max-width: $mobile-width-max) {
-      font-size: 22px;
-      line-height: 22px;
-    }
-
-    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-      font-size: 25px;
-      line-height: 25px;
-    }
-
-    @media (min-width: $desktop-width-min) {
-      font-size: 35px;
-      line-height: 35px;
-    }
+  @media (max-width: $mobile-width-max) {
+    font-size: 22px;
+    line-height: 22px;
   }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
 
 .title::before {
   content: attr(data-title);

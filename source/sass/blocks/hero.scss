@@ -175,7 +175,7 @@
   width: 180px;
 
   @media (max-width: $tablet-width-max) {
-    margin: 10px auto 0 auto;
+    margin: 10px auto 0;
   }
 }
 
@@ -272,7 +272,7 @@
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   @media (max-width: $mobile-width-max) {
     margin: 0 10px;

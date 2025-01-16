@@ -41,10 +41,12 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 500px;
     margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width-min) {
+    width: 1000px;
     margin-bottom: 51px;
   }
 }
@@ -76,13 +78,13 @@
 }
 
 .tours__slide-container {
-// overflow-y: scroll;
-// position: relative;
+  // overflow-y: scroll;
+  // position: relative;
 }
 
 .tours__image {
   // position: absolute;
-  // top: 0;
+  // top: 0; // 1
   // left: 0;
 }
 
@@ -97,7 +99,6 @@
   align-items: flex-end;
   justify-content: end;
   // z-index: 3;
-
   height: 416px;
   padding: 30px 20px;
   color: $basic-light-color;
@@ -197,7 +198,7 @@
   z-index: 1;
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 5px;
+    margin-bottom: 5px; // 1
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -220,6 +221,10 @@
     margin: 0 -4px;
     margin-bottom: -8px;
     border-spacing: 4px 5px;
+
+    // margin: 0 -5px;
+    // margin-bottom: -8px;
+    // border-spacing: 4px 6px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -229,7 +234,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 0px -12px;
+    margin: 0 -12px;
     border-spacing: 12px 4px;
     margin-bottom: -5px;
   }
@@ -244,7 +249,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 
   @media (max-width: $mobile-width-max) {
-    top: -6px;
+    top: -6px; // -3
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -430,7 +435,8 @@
     color: rgba(153, 153, 153, 1);
   }
 
-  &::after {
+  &:disabled::after,
+  &-disabled::after {
     background-color: rgba(153, 153, 153, 1);
   }
 }

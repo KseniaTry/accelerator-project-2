@@ -13,6 +13,8 @@
 
   @media (min-width: $desktop-width-min) {
     padding: 42px 120px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -63,20 +65,17 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    position: absolute;
-    top: 54px;
-    left: 0;
     width: 100%;
     font-weight: 400;
     font-size: 16px;
-    font-size: 16px;
+    margin-top: -34px;
     background-color: transparent;
   }
 }
 
 .header__toggle {
   position: absolute;
-  left: 0px;
+  left: 0;
   width: 17px;
   height: 2px;
   background-color: $basic-light-color;
@@ -132,17 +131,17 @@
   @media (max-width: $mobile-width-max) {
     display: none;
     width: $mobile-content-width;
-    gap: 22px;
-    padding-top: 15px;
-    padding-bottom: 50px;
+    gap: 14px;
+    padding-top: 12px;
+    padding-bottom: 45px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     display: none;
     width: $tablet-content-width;
-    gap: 26px;
-    padding-top: 50px;
-    padding-bottom: 70px;
+    gap: 18px;
+    padding-top: 45px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -166,9 +165,16 @@
 }
 
 .header__navigation-link {
+  display: inline-block;
   padding: 3px 5px;
   border: 1px solid transparent;
   color: $basic-light-color;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 3px 5px;
+  border: 1px solid transparent;
+  color: #ffffff;
   text-decoration: none;
 
   &:hover {
@@ -246,7 +252,7 @@
   }
 
   &:hover .header__logo-icon {
-    fill:rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
   }
 
   &:focus .header__logo-icon {
@@ -256,10 +262,10 @@
   &:active .header__logo-icon {
     fill: #1c3374;
   }
+}
 
-  &-disabled .header__logo-icon {
-    fill: #999999;
-  }
+.header__logo-link-disabled .header__logo-icon {
+  fill: #999999;
 }
 
 .header__logo-icon {

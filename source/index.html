@@ -23,7 +23,7 @@
   <header class="header" data-test="header">
     <div class="header__main-container">
       <a class="header__logo-link" href="index.html" aria-label="Логотип LIFETOUR">
-        <svg class="header__logo-icon" width="142" height="42" alt="Логотип LIFETOUR" viewBox="0 0 142 42" fill="none"
+        <svg class="header__logo-icon" width="142" height="42" viewBox="0 0 142 42" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path d="m15.73 27.24 3.77-3.88 4.29 3.88h7.34l-11.68-11.24-11.58 11.24h7.86Z" />
           <path
@@ -118,7 +118,7 @@
                 <source width="320" height="568" type="image/webp"
                   srcset="img/hero/kamchatka/photo-cards/photo-cards-tablet@1x.webp 1x, img/hero/kamchatka/photo-cards/photo-cards-tablet@2x.webp 2x">
 
-                <source media="(min-width: 1440px)" width="410" height="" type="image/png"
+                <source media="(min-width: 1440px)" width="410" height="459" type="image/png"
                   srcset="img/hero/kamchatka/photo-cards/photo-cards-desktop@1x.png 1x, img/hero/kamchatka/photo-cards/photo-cards-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" width="442" height="365" type="image/png"
                   srcset="img/hero/kamchatka/photo-cards/photo-cards-tablet@1x.png 1x, img/hero/kamchatka/photo-cards/photo-cards-tablet@2x.png 2x">
@@ -300,7 +300,7 @@
                 <source media="(min-width: 1440px)" width="380" height="416" type="image/jpg"
                   srcset="img/tours/adigeya/tour-adygeya-desktop@1x.jpg 1x, img/tours/adigeya/tour-adygeya-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" width="330" height="416" type="image/jpg"
-                  srcset="img/tours/adigeya/tour-adygeya-tablet@1x.jpg, img/tours/adigeya/tour-adygeya-tablet@2x.jpg">
+                  srcset="img/tours/adigeya/tour-adygeya-tablet@1x.jpg 1x, img/tours/adigeya/tour-adygeya-tablet@2x.jpg 2x">
                 <img class="tours__image" src="img/tours/adigeya/tour-adygeya-mobile@1x.jpg" width="290" height="416"
                   srcset="img/tours/adigeya/tour-adygeya-mobile@2x.jpg" alt="Фотография гор в Адыгее">
               </picture>
@@ -384,8 +384,7 @@
                           <span class="tours__star tours__star--active"></span>
                           <span class="tours__star tours__star--active"></span>
                           <span class="tours__star tours__star--active"></span>
-                        </div></span>
-                        </span>
+                        </div>
                       </td>
                       <td class="tours__parameters-item">12.07–19.07</td>
                       <td class="tours__parameters-item">до 7 чел.</td>
@@ -429,7 +428,7 @@
                 </div>
 
                 <h4>Александр Прокофьев</h4>
-                <a class="training__vk-icon social-list__link social-list__link--vk" href="#"><span
+                <a class="training__vk-link" href="#"><span
                     class="visually-hidden">Ссылка на страницу инструктора
                     Александра Прокофьева Вконтакте</span></a>
                 <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит
@@ -450,7 +449,7 @@
                 </div>
 
                 <h4>Светлана Афиногенова</h4>
-                <a class="training__vk-icon social-list__link social-list__link--vk" href="#"><span
+                <a class="training__vk-link" href="#"><span
                     class="visually-hidden">Ссылка на страницу инструктора
                     Светланы Афиногеновой Вконтакте</span></a>
                 <p>Видеть мир вокруг, познавать его опасности, находить друг друга,
@@ -471,7 +470,7 @@
                 </div>
 
                 <h4>Надежда Колесниченко</h4>
-                <a class="training__vk-icon social-list__link social-list__link--vk" href="#"><span
+                <a class="training__vk-link" href="#"><span
                     class="visually-hidden">Ссылка на страницу инструктора
                     Надежды Колесниченко Вконтакте</span></a>
                 <p>Участники говорят, что Надежда ответственная, приятная в общении,
@@ -492,7 +491,7 @@
                 </div>
 
                 <h4>Федор Кайгородов</h4>
-                <a class="training__vk-icon social-list__link social-list__link--vk" href="#"><span
+                <a class="training__vk-link" href="#"><span
                     class="visually-hidden">Ссылка на страницу инструктора
                     Федора Кайгородова Вконтакте</span></a>
                 <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах
@@ -513,7 +512,7 @@
                 </div>
 
                 <h4>Даниэль Васнецов</h4>
-                <a class="training__vk-icon social-list__link social-list__link--vk" href="#"><span
+                <a class="training__vk-link" href="#"><span
                     class="visually-hidden">Ссылка на страницу инструктора
                     Даниэля Васнецова Вконтакте</span></a>
                 <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и
@@ -691,7 +690,7 @@
                 <div class="reviews__text-container">
                   <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
                     наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
-                  <p> У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе
+                  <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе
                     у костра
                     и пели песни. Обязательно повторю такое приключение!</p>
                   <h3 class="reviews__reviewer">Елена Пирогова</h3>
@@ -723,8 +722,7 @@
             </li>
             <li class="advantages__item advantages__item--crown">
               <h3>Экспертиза и знания</h3>
-              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
-                <br>Это<br> гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться
+              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. <br>Это<br> гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться
                 опытом
                 без опасений.
               </p>
@@ -905,14 +903,14 @@
         <form class="consultation__form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="consultation__data-entry-container">
             <input class="consultation__input" type="tel" id="phone" name="phone" placeholder="+7 (000)-000-00-00"
-              pattern="/^([+]?[0-9\s-\(\)]{3,25})*$/i" minlength="11" required>
+              required>
+              <!-- pattern="/^([+]?[0-9\s\-\(\)]{3,25})*$/i" -->
             <label class="consultation__label" for="phone">Телефон</label>
           </div>
 
           <div class="consultation__data-entry-container">
-            <input class="consultation__input" type="email" id="email" name="email" placeholder="Email" required>
+            <input class="consultation__input" type="text" id="email" name="email" placeholder="Email" required>
             <label class="consultation__label" for="email">Email</label>
-            <!-- pattern="([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)" -->
           </div>
           <button class="consultation__form-send button button--primary" type="submit">Отправить</button>
         </form>
@@ -963,7 +961,7 @@
       <div class="footer__site-information-container">
         <h2 class="visually-hidden">Вспомогательная информация и ссылки на важные разделы сайта</h2>
         <a class="footer__logo-link" href="index.html" aria-label="Логотип LIFETOUR">
-          <svg class="footer__logo-icon" width="142" height="42" alt="Логотип LIFETOUR" viewBox="0 0 142 42" fill="none"
+          <svg class="footer__logo-icon" width="142" height="42" viewBox="0 0 142 42" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="m15.73 27.24 3.77-3.88 4.29 3.88h7.34l-11.68-11.24-11.58 11.24h7.86Z" />
             <path
@@ -988,7 +986,7 @@
             <li class="footer__navigation-item">
               <a class="footer__navigation-link" href="#gallery">Фотографии</a>
             </li>
-            <li class="footer__navigation-item navigation__item">
+            <li class="footer__navigation-item">
               <a class="footer__navigation-link" href="#contacts">Контакты</a>
             </li>
           </ul>
