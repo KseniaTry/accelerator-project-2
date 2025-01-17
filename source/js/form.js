@@ -43,18 +43,28 @@ const validateForm = () => {
     const phone = phoneInput.value;
     const email = emailInput.value;
 
+    consultationInputs.forEach((input) => {
+      input.addEventListener('input', ({ target }) => {
+        target.setCustomValidity(''); // сброс ошибки
+        target.checkValidity(); // проверка поля
+      });
+    });
+
     if (!isValidPhone(phone)) {
-      alert('Номер телефона может содержать только цифры, знаки +,(,),-. Длина от 3 до 25 символов');
+      phoneInput.setCustomValidity('Номер телефона может содержать только цифры, знаки +,(,),-. Длина от 3 до 25 символов');
+      phoneInput.reportValidity();
       return;
     }
 
     if (!isValidEmail(email)) {
-      alert('Email должен содержать символ @, латинские или кириллические символы или цифры');
+      emailInput.setCustomValidity('Email должен содержать символ @, латинские или кириллические символы или цифры');
+      emailInput.reportValidity();
       return;
     }
 
     consultationForm.submit();
   });
 }
+
 
 export { validateForm, resetForm, changeLabel };
