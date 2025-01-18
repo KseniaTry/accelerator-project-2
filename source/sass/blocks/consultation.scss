@@ -36,7 +36,7 @@
     text-align: center;
 
     @media (max-width: $mobile-width-max) {
-      margin: 2px 0 19px;
+      margin: 2px 0 18px;
       font-size: 22px;
       line-height: 22px;
     }
@@ -64,7 +64,6 @@
       margin-bottom: 20px;
       font-size: 12px;
       line-height: 18px;
-      white-space: break-spaces;
     }
 
     @media (min-width: $tablet-width-min) {
@@ -214,6 +213,7 @@
 
   @media (max-width: $mobile-width-max) {
     margin-top: 1px;
+    padding: 21px 20px 19px 20px;
   }
 
   @media (min-width: $desktop-width-min) {

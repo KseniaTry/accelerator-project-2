@@ -1,6 +1,6 @@
 .tours {
   @media (max-width: $mobile-width-max) {
-    padding: 36px 15px 20px;
+    padding: 38px 15px 20px; // 36
     background-image: url("../../img/tours/clouds/clouds-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: bottom -12px right;
@@ -37,7 +37,7 @@
 
 .tours__title {
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 42px;
+    margin-bottom: 40px; // 42
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -47,13 +47,13 @@
 
   @media (min-width: $desktop-width-min) {
     width: 1000px;
-    margin-bottom: 51px;
+    margin-bottom: 51px; // 51
   }
 }
 
 .tours__swiper {
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 20px;
+    margin-bottom: 20px; // 20
   }
 
   @media (min-width: $desktop-width-min) {
@@ -102,21 +102,21 @@
   height: 416px;
   padding: 30px 20px;
   color: $basic-light-color;
-  // overflow-y: scroll;
+  gap: 15px; // 16
+  overflow: auto;
+  overflow-x: hidden;
 
   @media (max-width: $mobile-width-max) {
     width: 290px;
-    gap: 16px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: 330px;
-    gap: 15px;
+    // gap: 16px;
   }
 
   @media (min-width: $desktop-width-min) {
     width: 380px;
-    gap: 16px;
   }
 }
 
@@ -198,15 +198,15 @@
   z-index: 1;
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 5px; // 1
+    margin-bottom: 6px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 11px;
+    margin-bottom: 11px; // 11
   }
 
   @media (min-width: $desktop-width-min) {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     padding-right: 80px;
   }
 }
@@ -218,13 +218,9 @@
   border-collapse: separate;
 
   @media (max-width: $mobile-width-max) {
-    margin: 0 -4px;
-    margin-bottom: -8px;
-    border-spacing: 4px 5px;
-
-    // margin: 0 -5px;
-    // margin-bottom: -8px;
-    // border-spacing: 4px 6px;
+    margin: 0 -6px;
+    margin-bottom: -5px;
+    border-spacing: 5px 4px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -234,7 +230,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 0 -12px;
+    margin: 0px -12px;
     border-spacing: 12px 4px;
     margin-bottom: -5px;
   }
@@ -249,7 +245,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 
   @media (max-width: $mobile-width-max) {
-    top: -6px; // -3
+    top: -8px; // -6
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -257,7 +253,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    top: -7px;
+    top: -7px; // -7
   }
 }
 
@@ -278,7 +274,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 125px;
+    width: 125px; // 125
   }
 }
 
@@ -288,11 +284,11 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: 111px;
+    width: 111px; // 111
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 122px; // 120
+    width: 122px; // 122
   }
 }
 
@@ -302,11 +298,11 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: 86px;
+    width: 86px; // 86
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 69px; // 71
+    width: 69px; // 69
   }
 }
 
@@ -355,7 +351,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: -17px;
+    top: -18px; // -17
     right: -10px;
   }
 
@@ -363,7 +359,7 @@
     // top: 102px;
     // right: 110px;
 
-    top: -21px;
+    top: -20px; // 21
     right: -10px;
   }
 }

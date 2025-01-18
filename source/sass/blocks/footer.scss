@@ -48,7 +48,7 @@
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     justify-content: center;
-    gap: 34px;
+    gap: 33px; //34
     width: $tablet-content-width;
   }
 
@@ -89,9 +89,11 @@
 }
 
 .footer__navigation {
-  @media (max-width: $tablet-width-max) {
-    font-size: 14px;
-    line-height: 14px;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 503px;
   }
 
   @media (min-width: $desktop-width-min) {

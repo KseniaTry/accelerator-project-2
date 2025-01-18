@@ -127,7 +127,8 @@
     padding: 123px 19px 40px;
     width: 380px;
     height: 330px;
-    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
   }
 
   &::before {

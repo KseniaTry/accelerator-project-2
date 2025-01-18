@@ -113,6 +113,7 @@
   box-shadow: 0 0 10px 0 rgba(28, 51, 116, 0.1);
   background-color: $basic-light-color;
   overflow: auto;
+  overflow-x: hidden;
 
   @media (max-width: $mobile-width-max) {
     width: 290px;
