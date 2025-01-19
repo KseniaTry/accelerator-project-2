@@ -61,6 +61,6 @@ const initGallerySlider = () => {
     addSwiperClass(gallerySwiperContainer, gallerySwiperWrapper, gallerySlides);
     initGallerySwiper();
   }
-}
+};
 
 export { initGallerySlider };

@@ -1,6 +1,6 @@
 .tours {
   @media (max-width: $mobile-width-max) {
-    padding: 38px 15px 20px; // 36
+    padding: 38px 15px 20px;
     background-image: url("../../img/tours/clouds/clouds-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: bottom -12px right;
@@ -37,7 +37,7 @@
 
 .tours__title {
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 40px; // 42
+    margin-bottom: 40px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -47,13 +47,13 @@
 
   @media (min-width: $desktop-width-min) {
     width: 1000px;
-    margin-bottom: 51px; // 51
+    margin-bottom: 51px;
   }
 }
 
 .tours__swiper {
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 20px; // 20
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -77,34 +77,20 @@
   margin-bottom: 20px;
 }
 
-.tours__slide-container {
-  // overflow-y: scroll;
-  // position: relative;
-}
-
-.tours__image {
-  // position: absolute;
-  // top: 0; // 1
-  // left: 0;
-}
-
 .tours__text-container {
   position: absolute;
   top: 0;
   left: 0;
-  // position: fixed;
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
   justify-content: end;
-  // z-index: 3;
+  gap: 15px;
   height: 416px;
   padding: 30px 20px;
-  color: $basic-light-color;
-  gap: 15px;
   overflow: auto;
   overflow-x: hidden;
+  color: $basic-light-color;
 
   @media (max-width: $mobile-width-max) {
     width: 290px;
@@ -201,7 +187,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 11px; // 11
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -244,7 +230,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 
   @media (max-width: $mobile-width-max) {
-    top: -8px; // -6
+    top: -8px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -252,7 +238,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    top: -7px; // -7
+    top: -7px;
   }
 }
 
@@ -269,11 +255,11 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: 100px;
+    width: 101px;
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 125px; // 125
+    width: 125px;
   }
 }
 
@@ -283,11 +269,11 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: 111px; // 111
+    width: 111px;
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 122px; // 122
+    width: 122px;
   }
 }
 
@@ -297,11 +283,11 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: 86px; // 86
+    width: 86px;
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 69px; // 69
+    width: 69px;
   }
 }
 
@@ -314,13 +300,7 @@
 
 // рейтинг
 .tours__rate {
-  @media (max-width: $tablet-width-max) {
-    margin-left: 2px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    margin-left: 3px;
-  }
+  margin-left: 3px;
 }
 
 .tours__star {
@@ -350,15 +330,12 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    top: -18px; // -17
+    top: -18px;
     right: -10px;
   }
 
   @media (min-width: $desktop-width-min) {
-    // top: 102px;
-    // right: 110px;
-
-    top: -20px; // 21
+    top: -20px;
     right: -10px;
   }
 }

@@ -45,9 +45,6 @@ const initAdvSwiper = () => {
     }
 
     advSwiper.slideToLoop(nextSlideIndex);
-
-    console.log(`active ${ activeSlideIndex}`);
-    console.log(`next ${ nextSlideIndex}`);
   });
 };
 
@@ -68,6 +65,6 @@ const initAdvSlider = () => {
     addSwiperClass(advSwiperContainer, advList, advItems);
     initAdvSwiper();
   }
-}
+};
 
-export { initAdvSlider }
+export { initAdvSlider };

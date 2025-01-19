@@ -5,14 +5,14 @@ const emailInput = document.getElementById('email');
 
 // функции для валидации
 const isValidPhone = (phone) => {
-  const pattern = /^([+]?[0-9\s\-\(\)]{3,25})*$/i;
+  const pattern = /^([+]?[0-9\s\-()]{3,25})*$/;
   return pattern.test(phone);
-}
+};
 
 const isValidEmail = (email) => {
   const pattern = /^[А-Яа-я0-9A-Za-z]+([._-]?[А-Яа-я0-9A-Za-z]+)@[А-Яа-я0-9A-Za-z]+([._-]?[А-Яа-я0-9A-Za-z]+)(.[А-Яа-я0-9A-Za-z]{2,5})$/;
   return pattern.test(email);
-}
+};
 
 // исчезновение label если данные в поле введены и поле не в фокусе
 const changeLabel = () => {
@@ -26,14 +26,14 @@ const changeLabel = () => {
       }
     });
   });
-}
+};
 
 // очистка формы при возвращении назад после успешной отправки
 const resetForm = () => {
-  window.addEventListener("unload", () => {
+  window.addEventListener('unload', () => {
     consultationForm.reset();
   });
-}
+};
 
 // валидация формы
 const validateForm = () => {
@@ -64,7 +64,7 @@ const validateForm = () => {
 
     consultationForm.submit();
   });
-}
+};
 
 
 export { validateForm, resetForm, changeLabel };

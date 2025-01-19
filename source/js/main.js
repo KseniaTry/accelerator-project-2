@@ -19,7 +19,7 @@ initAdvSlider();
 // gallery slider
 initGallerySlider();
 
-var userDeviceArray = [
+const userDeviceArray = [
   {device: 'Android', platform: /Android/},
   {device: 'iPhone', platform: /iPhone/},
   {device: 'iPad', platform: /iPad/},
@@ -31,15 +31,15 @@ var userDeviceArray = [
   {device: 'Macintosh', platform: /Macintosh/}
 ];
 
-var platform = navigator.userAgent;
+const platform = navigator.userAgent;
 
 function getPlatform() {
-  for (var i in userDeviceArray) {
-      if (userDeviceArray[i].platform.test(platform)) {
-          return userDeviceArray[i].device;
-      }
+  for (const i in userDeviceArray) {
+    if (userDeviceArray[i].platform.test(platform)) {
+      return userDeviceArray[i].device;
+    }
   }
-  return 'Неизвестная платформа!' + platform;
+  return `Неизвестная платформа!${ platform}`;
 }
 
-console.log('Ваша платформа: ' + getPlatform());
+console.log(`Ваша платформа: ${ getPlatform()}`);

@@ -14,7 +14,7 @@ const switchMenu = () => {
     pageMain.classList.toggle('overlay');
     footer.classList.toggle('overlay');
   });
-}
+};
 
 const closeMenuOnItemClick = () => {
   navigationItems.forEach((navigationItem) => {
@@ -26,6 +26,6 @@ const closeMenuOnItemClick = () => {
       footer.classList.remove('overlay');
     });
   });
-}
+};
 
 export { switchMenu, closeMenuOnItemClick };
