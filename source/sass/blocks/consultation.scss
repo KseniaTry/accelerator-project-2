@@ -1,5 +1,6 @@
 .consultation {
   position: relative;
+  background-color: $basic-dark-color;
 
   @media (max-width: $mobile-width-max) {
     background-image:

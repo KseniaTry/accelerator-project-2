@@ -2,15 +2,17 @@ const consultationForm = document.querySelector('.consultation__form');
 const consultationInputs = consultationForm.querySelectorAll('.consultation__input');
 const phoneInput = document.getElementById('phone');
 const emailInput = document.getElementById('email');
+const REGEX_PHONE = /^([+]?[0-9\s\-()]{3,25})*$/;
+const REGEX_EMAIL = /^[А-Яа-я0-9A-Za-z]+([._-]?[А-Яа-я0-9A-Za-z]+)@[А-Яа-я0-9A-Za-z]+([._-]?[А-Яа-я0-9A-Za-z]+)(.[А-Яа-я0-9A-Za-z]{2,5})$/;
 
 // функции для валидации
 const isValidPhone = (phone) => {
-  const pattern = /^([+]?[0-9\s\-()]{3,25})*$/;
+  const pattern = REGEX_PHONE;
   return pattern.test(phone);
 };
 
 const isValidEmail = (email) => {
-  const pattern = /^[А-Яа-я0-9A-Za-z]+([._-]?[А-Яа-я0-9A-Za-z]+)@[А-Яа-я0-9A-Za-z]+([._-]?[А-Яа-я0-9A-Za-z]+)(.[А-Яа-я0-9A-Za-z]{2,5})$/;
+  const pattern = REGEX_EMAIL;
   return pattern.test(email);
 };
 
