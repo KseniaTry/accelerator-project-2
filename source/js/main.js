@@ -1,5 +1,5 @@
 import './sliders';
-import './platform-check'
+import './platform-check';
 import { validateForm, changeLabel, resetForm } from './form';
 import { closeMenuOnItemClick, switchMenu } from './menu';
 import { initAdvSlider } from './adv-slider';

@@ -28,18 +28,18 @@ function getPlatform() {
   return `Неизвестная платформа!${ platform}`;
 }
 
-if (getPlatform()=== 'Windows') {
+if (getPlatform() === 'Windows') {
   if (window.innerWidth >= TABLET_MIN_WIDTH && window.innerWidth <= TABLET_MAX_WIDTH) {
     toursCardTitles.forEach((toursCardTitle) => {
       toursCardTitle.style.marginBottom = '10px';
-    })
+    });
   }
 }
 
-if (getPlatform()=== 'Macintosh') {
+if (getPlatform() === 'Macintosh') {
   if (window.innerWidth >= TABLET_MIN_WIDTH && window.innerWidth <= TABLET_MAX_WIDTH) {
     toursCardTitles.forEach((toursCardTitle) => {
       toursCardTitle.style.marginBottom = '11px';
-    })
+    });
   }
 }
